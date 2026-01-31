@@ -6,7 +6,6 @@
 <title>Bitcoin vu par Famas</title>
 
 <style>
-/* BASE MOBILE-FIRST */
 body{
   margin:0;
   background:#000;
@@ -15,6 +14,7 @@ body{
   font-size:16px;
 }
 
+/* HEADER */
 header{
   padding:28px 14px;
   text-align:center;
@@ -34,6 +34,7 @@ h2{
   font-size:1rem;
 }
 
+/* MAIN */
 main{
   padding:10px;
   display:flex;
@@ -42,15 +43,38 @@ main{
 
 .container{
   width:100%;
-  max-width:420px; /* lisibilité mobile */
+  max-width:420px;
 }
 
+/* IMAGE */
 img.cover{
   width:100%;
   height:auto;
   margin:20px auto;
   display:block;
   border:2px solid #7CFF7C;
+}
+
+/* SOMMAIRE */
+.sommaire{
+  margin-top:30px;
+}
+
+.article-item{
+  border:1px solid #355;
+  padding:14px;
+  margin:16px 0;
+  background:#050805;
+}
+
+.article-item a{
+  color:#7CFF7C;
+}
+
+.article-date{
+  font-size:14px;
+  color:#6f8f7a;
+  margin-bottom:6px;
 }
 
 /* FOOTER */
@@ -71,9 +95,7 @@ a:hover{
   text-decoration:underline;
 }
 
-/* TABLET+ */
 @media (min-width:768px){
-  h1{ font-size:2.2rem; }
   .container{ max-width:720px; }
 }
 </style>
@@ -89,9 +111,22 @@ a:hover{
 </header>
 
 <main>
-  <div class="container">
-    <img src="/Komainu.PNG" alt="Komainu" class="cover">
+<div class="container">
+
+<img src="/Komainu.PNG" alt="Komainu" class="cover">
+
+<div class="sommaire">
+
+  <div class="article-item">
+    <div class="article-date">21 novembre 2025</div>
+    <a href="/2026-01-30-association-bitcoin.html">
+      Créer une association Bitcoin (loi 1901)
+    </a>
   </div>
+
+</div>
+
+</div>
 </main>
 
 <footer>

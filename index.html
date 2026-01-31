@@ -6,146 +6,122 @@
 <title>Bitcoin vu par Famas</title>
 
 <style>
-body{
-  margin:0;
-  background:#000;
-  color:#9fb7a1;
-  font-family:"Courier New", monospace;
-  font-size:16px;
+body {
+  margin: 12px;
+  font-family: "Courier New", Monaco, monospace;
+  background: #000;
+  color: #9fb3a1;
+  line-height: 1.6;
 }
 
-/* HEADER */
-header{
-  padding:28px 14px;
-  text-align:center;
+h1, h2 {
+  color: #cfe3d1;
+  text-align: center;
+  margin: 0.8em 0;
 }
 
-h1{
-  margin:0;
-  color:#7CFF7C;
-  letter-spacing:1px;
-  font-size:1.9rem;
+/* Articles courants : bordure vert fluo, texte gris-vert */
+.article {
+  border: 2px solid #7CFC00; /* bordure fluo */
+  padding: 12px;
+  margin: 16px 0;
+  background: rgba(80,120,100,0.05);
+  color: #9fb3a1;
 }
 
-h2{
-  margin-top:8px;
-  font-weight:normal;
-  color:#b6ffb6;
-  font-size:1rem;
+/* Articles importants : bordure plus lumineuse, texte vert fluo */
+.article-important {
+  border: 2px solid #B0FF4D; /* encadrement encore plus lumineux */
+  padding: 14px;
+  margin: 16px 0;
+  background: rgba(124,252,0,0.08); /* fond légèrement vert fluo */
+  color: #7CFC00; /* texte vert fluo */
+  font-weight: bold;
 }
 
-/* MAIN */
-main{
-  padding:10px;
-  display:flex;
-  justify-content:center;
+.article a {
+  color: #cfe3d1;
+  text-decoration: none;
 }
 
-.container{
-  width:100%;
-  max-width:420px;
+.article a:hover {
+  text-decoration: underline;
 }
 
-/* IMAGE */
-img.cover{
-  width:100%;
-  height:auto;
-  margin:20px auto;
-  display:block;
-  border:2px solid #7CFF7C;
+.article-important a {
+  color: #7CFC00;
+  text-decoration: none;
 }
 
-/* SOMMAIRE */
-.sommaire{
-  margin-top:30px;
+.article-important a:hover {
+  text-decoration: underline;
 }
 
-.article-item{
-  border:1px solid #355;
-  padding:14px;
-  margin:16px 0;
-  background:#050805;
+/* Footer */
+.footer {
+  margin-top: 40px;
+  padding-top: 14px;
+  border-top: 1px solid #2a3a32;
+  text-align: center;
 }
 
-.article-item a{
-  color:#7CFF7C;
+.footer a {
+  display: inline-block;
+  margin: 6px 10px;
+  padding: 6px 10px;
+  text-decoration: none;
+  color: #cfe3d1;
+  border: 1px solid #3a5a4a;
 }
 
-.article-date{
-  font-size:14px;
-  color:#6f8f7a;
-  margin-bottom:6px;
+.footer a:hover {
+  background: rgba(100,160,130,0.15);
 }
 
-/* FOOTER */
-footer{
-  margin-top:40px;
-  padding:14px 0;
-  border-top:1px solid #355;
-  text-align:center;
-  font-size:14px;
-}
-
-a{
-  color:#7CFF7C;
-  text-decoration:none;
-}
-
-a:hover{
-  text-decoration:underline;
-}
-
-@media (min-width:768px){
-  .container{ max-width:720px; }
+/* Image accueil */
+#hero-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 20px auto;
 }
 </style>
 </head>
 
-<body>
+<body id="top">
 
-<a id="top"></a>
+<!-- Image d'accueil -->
+<img src="Komainu.PNG" alt="Komainu" id="hero-img">
 
-<header>
-  <h1>Bitcoin</h1>
-  <h2>vu par Famas</h2>
-</header>
+<h1>Bitcoin vu par Famas</h1>
 
-<main>
-<div class="container">
-
-<img src="/Komainu.PNG" alt="Komainu" class="cover">
-
-<div class="sommaire">
-
-<div class="section" id="nouvel-article">
-<h2>Nouvel article</h2>
-
+<!-- Section Articles -->
 <div class="section">
 <h2>Articles</h2>
 
-<!-- Article 2 : Bitcoin et Islam -->
-<div class="article" style="border:1px solid #5f8f7a; padding:12px; margin:16px 0; background:rgba(80,120,100,0.05);">
-  <div class="article-date" style="font-size:0.85em; color:#6f8578;">21 novembre 2025</div>
+<!-- Article important : Islam et Bitcoin -->
+<div class="article-important">
+  <div class="article-date">21 novembre 2025</div>
   <strong>
-    <a href="2026-01-30-Islam-et-bitcoin.html" style="color:#cfe3d1; text-decoration:none;">
+    <a href="2026-01-30-Islam-et-bitcoin.html">
       Bitcoin en droit islamique : licite ou interdit ?
     </a>
   </strong>
-  <p style="margin-top:6px; color:#9fb3a1;">
+  <p>
     Analyse vulgarisée du statut de Bitcoin en droit islamique
     à partir des principes classiques du fiqh des transactions.
   </p>
 </div>
 
-<!-- Article 1 : Association Bitcoin -->
-<div class="article" style="border:1px solid #5f8f7a; padding:12px; margin:16px 0; background:rgba(80,120,100,0.05);">
-  <div class="article-date" style="font-size:0.85em; color:#6f8578;">21 novembre 2025</div>
+<!-- Article courant : Association Bitcoin -->
+<div class="article">
+  <div class="article-date">21 novembre 2025</div>
   <strong>
-    <a href="2026-01-30-association-bitcoin.html" style="color:#cfe3d1; text-decoration:none;">
+    <a href="2026-01-30-association-bitcoin.html">
       Créer une association Bitcoin (loi 1901)
     </a>
   </strong>
-  <p style="margin-top:6px; color:#9fb3a1;">
+  <p>
     Cadre légal, objectifs et étapes clés pour structurer
     un projet Bitcoin communautaire.
   </p>
@@ -153,14 +129,11 @@ a:hover{
 
 </div>
 
-</div>
-
-</div>
-</main>
-
-<footer>
+<!-- Footer -->
+<div class="footer">
   <a href="#top">↑ Haut de page</a>
-</footer>
+  <a href="index.html">Accueil</a>
+</div>
 
 </body>
 </html>

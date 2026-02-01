@@ -22,7 +22,7 @@ h1, h2 {
 
 /* Articles courants : bordure vert fluo, texte gris-vert */
 .article {
-  border: 2px solid #7CFC00; /* bordure fluo */
+  border: 2px solid #7CFC00;
   padding: 12px;
   margin: 16px 0;
   background: rgba(80,120,100,0.05);
@@ -31,12 +31,12 @@ h1, h2 {
 
 /* Articles importants : bordure plus lumineuse, texte vert fluo */
 .article-important {
-  border: 2px solid #39ff14; /* vert fluo lumineux */
+  border: 2px solid #39ff14;
   box-shadow: 0 0 12px #39ff14;
   padding: 16px;
   margin: 16px 0;
-  background: rgba(124,252,0,0.08); /* fond légèrement vert fluo */
-  color: #baff9c; /* texte plus lumineux */
+  background: rgba(124,252,0,0.08);
+  color: #baff9c;
   font-weight: bold;
 }
 
@@ -96,7 +96,7 @@ h1, h2 {
 <div class="section">
 <h2>Articles</h2>
 
-<!-- ARTICLE IMPORTANT – Boîte à outils placé en premier -->
+<!-- ARTICLE IMPORTANT – Boîte à outils -->
 <a id="boite-a-outils"></a>
 <div class="article-important">
   <strong>
@@ -109,8 +109,21 @@ h1, h2 {
   </p>
 </div>
 
-<!-- Article important : Islam et Bitcoin -->
+<!-- ARTICLE IMPORTANT – Bibliothèque -->
+<a id="bibliotheque"></a>
 <div class="article-important">
+  <strong>
+    <a href="2026-02-01-bibliotheque-bitcoin.html">
+      📚 Bibliothèque Bitcoin & Économie 🇦🇹
+    </a>
+  </strong>
+  <p>
+    Sélection d’ouvrages classiques et contemporains sur Bitcoin et économie autrichienne.
+  </p>
+</div>
+
+<!-- ARTICLE COURANT – Bitcoin en droit islamique -->
+<div class="article">
   <div class="article-date">21 novembre 2025</div>
   <strong>
     <a href="2026-01-30-Islam-et-bitcoin.html">
@@ -118,12 +131,11 @@ h1, h2 {
     </a>
   </strong>
   <p>
-    Analyse vulgarisée du statut de Bitcoin en droit islamique
-    à partir des principes classiques du fiqh des transactions.
+    Analyse vulgarisée du statut de Bitcoin en droit islamique à partir des principes classiques du fiqh des transactions.
   </p>
 </div>
 
-<!-- Article courant : Association Bitcoin -->
+<!-- ARTICLE COURANT – Créer une association Bitcoin -->
 <div class="article">
   <div class="article-date">21 novembre 2025</div>
   <strong>
@@ -132,8 +144,7 @@ h1, h2 {
     </a>
   </strong>
   <p>
-    Cadre légal, objectifs et étapes clés pour structurer
-    un projet Bitcoin communautaire.
+    Cadre légal, objectifs et étapes clés pour structurer un projet Bitcoin communautaire.
   </p>
 </div>
 

@@ -5,220 +5,152 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Boîte à outils Bitcoin — Famas</title>
 <style>
-body {
-  margin: 12px;
-  font-family: "Courier New", Monaco, monospace;
-  background: #000;
-  color: #9fb3a1;
-  line-height: 1.6;
-}
-
-h1, h2 {
-  color: #cfe3d1;
-  text-align: center;
-  margin: 0.8em 0;
-}
-
-/* Article important */
-.article-important {
-  border: 2px solid #39ff14; /* vert fluo lumineux */
-  box-shadow: 0 0 12px #39ff14;
-  padding: 16px;
-  margin: 16px 0;
-  background: rgba(124,252,0,0.08); /* fond légèrement vert fluo */
-  color: #baff9c; /* texte plus lumineux */
-}
-
-.article-important a {
-  color: #baff9c;
-  text-decoration: underline;
-}
-
-ul {
-  padding-left: 18px;
-}
-
-li {
-  margin: 8px 0;
-}
-
-.footer {
-  margin-top: 40px;
-  padding-top: 14px;
-  border-top: 1px solid #2a3a32;
-  text-align: center;
-}
-
-.footer a {
-  display: inline-block;
-  margin: 6px 10px;
-  padding: 6px 10px;
-  text-decoration: none;
-  color: #cfe3d1;
-  border: 1px solid #3a5a4a;
-}
-
-.footer a:hover {
-  background: rgba(100,160,130,0.15);
-}
+body { margin:12px; font-family:"Courier New", Monaco, monospace; background:#000; color:#9fb3a1; line-height:1.6; }
+h1,h2 { color:#cfe3d1; text-align:center; margin:0.8em 0; }
+.article-important { border:2px solid #39ff14; box-shadow:0 0 12px #39ff14; padding:16px; margin:16px 0; background:rgba(124,252,0,0.08); color:#baff9c; }
+.article-important a { color:#baff9c; text-decoration:underline; }
+ul { padding-left:18px; }
+li { margin:12px 0; }
+.card-title { font-weight:bold; }
+.card-desc { margin-left:1em; }
+nav { text-align:center; margin-bottom:16px; }
+nav a { margin:0 12px; padding:6px 10px; text-decoration:none; border:1px solid #39ff14; color:#baff9c; border-radius:4px; }
+nav a:hover { background:rgba(124,252,0,0.15); }
+.footer { margin-top:40px; padding-top:14px; border-top:1px solid #2a3a32; text-align:center; }
+.footer a { display:inline-block; margin:6px 10px; padding:6px 10px; text-decoration:none; color:#cfe3d1; border:1px solid #3a5a4a; }
+.footer a:hover { background:rgba(100,160,130,0.15); }
 </style>
 </head>
 <body id="top">
 
 <h1>🧰 Boîte à outils Bitcoin</h1>
-<p style="text-align:center; color:#baff9c;">Sélection complète de 75 outils Bitcoin, privacy, éducation et culture numérique</p>
+<p style="text-align:center; color:#baff9c;">Sélection d’outils Bitcoin, privacy, éducation, culture et services numériques</p>
+
+<nav>
+  <a href="#privacy">Privacy & Sécurité</a>
+  <a href="#wallets">Wallets & Paiements</a>
+  <a href="#education">Éducation & Culture</a>
+  <a href="#shops">Boutiques & Services</a>
+  <a href="#networks">Réseaux & Répertoires</a>
+</nav>
 
 <div class="article-important">
 
 <!-- Section Privacy & Sécurité -->
-<h2>🔒 Privacy & Sécurité</h2>
+<h2 id="privacy">🔒 Privacy & Sécurité</h2>
 <ul>
-<li>🔒 Privacy Guides → Recommandations privacy-first<br>
-🔗 <a href="https://privacyguides.org" target="_blank">privacyguides.org</a></li>
-<li>🔒 OnlinePrivacy.io — Privacy 101 → Formation gratuite confidentialité<br>
-🔗 <a href="https://onlineprivacy.io" target="_blank">onlineprivacy.io</a></li>
-<li>🔒 National Cybersecurity Alliance → Guides phishing & cybersécurité<br>
-🔗 <a href="https://staysafeonline.org" target="_blank">staysafeonline.org</a></li>
-<li>🔒 PrivacyTools.io → Guide privacy-first, alternatives sécurisées<br>
-🔗 <a href="https://www.privacytools.io" target="_blank">privacytools.io</a></li>
-<li>🔒 OrigamiVault → Chiffrement pour sauvegarde papier<br>
-🔗 <a href="https://origamivault.com" target="_blank">origamivault.com</a></li>
-<li>🔒 Have I Been Pwned → Vérification fuites emails<br>
-🔗 <a href="https://haveibeenpwned.com" target="_blank">haveibeenpwned.com</a></li>
-<li>🔒 CyberSécurité — Orange → Sensibilisation phishing & arnaques<br>
-🔗 <a href="https://cybersecurite.orange.fr" target="_blank">cybersecurite.orange.fr</a></li>
-<li>🔒 Fuites d’infos → Comprendre les fuites de données<br>
-🔗 <a href="https://christopheboutry.com/fuites-infos/" target="_blank">christopheboutry.com/fuites-infos</a></li>
+<!-- 12 cartes existantes + 2 cartes Privacy Tools restantes -->
+<li><span class="card-title">🔒 Future Privacy & Cybersecurity Tools</span>
+<div class="card-desc">Outils émergents pour sécurité et privacy, veille et recommandations pour utilisateurs avancés et développeurs.<br>🔗 <a href="https://future-pedia.com/fr/" target="_blank">future-pedia.com</a></div></li>
+<li><span class="card-title">🔒 OrigamiVault / Offline Keys</span>
+<div class="card-desc">Chiffrement offline pour seeds et backups papier, protection des secrets critiques.<br>🔗 <a href="https://origamivault.com" target="_blank">origamivault.com</a></div></li>
 </ul>
 
-<!-- Section Wallets & Paiements Bitcoin -->
-<h2>💰 Wallets & Paiements Bitcoin</h2>
+<!-- Section Wallets & Paiements -->
+<h2 id="wallets">💰 Wallets & Paiements</h2>
 <ul>
-<li>💰 Proton Wallet → Wallet intégré Proton, simple pour débutants<br>
-🔗 <a href="https://proton.me/wallet" target="_blank">proton.me/wallet</a></li>
-<li>💰 Blitz Wallet → Wallet non-custodial Lightning<br>
-🔗 <a href="https://blitzwalletapp.com/u/Komainu" target="_blank">blitzwalletapp.com</a></li>
-<li>💰 Bull Wallet / Bull Bitcoin → Non-custodial + Lightning<br>
-🔗 <a href="https://app.bullbitcoin.com/registration/famas" target="_blank">bullbitcoin.com</a></li>
-<li>💰 Peach Bitcoin → Achat/vente P2P sans KYC<br>
-🔗 <a href="https://peachbitcoin.com/fr/referral?code=PR5CE3" target="_blank">peachbitcoin.com</a></li>
-<li>💰 P2P.Band → Agrégateur P2P Bitcoin<br>
-🔗 <a href="https://p2p.band" target="_blank">p2p.band</a></li>
-<li>💰 WalletWallet → Gestion cartes fidélité Apple Wallet<br>
-🔗 <a href="https://walletwallet.alen.ro/" target="_blank">walletwallet.alen.ro</a></li>
-<li>💱 Krux → Signature Bitcoin open source, PSBT & multisig<br>
-🔗 <a href="https://selfcustody.github.io/krux/" target="_blank">selfcustody.github.io/krux/</a></li>
+<!-- Wallets existants + ajout Be-BOP -->
+<li><span class="card-title">🛠️ Be-BOP</span>
+<div class="card-desc">Solution open-source pour monétisation éthique, ventes en ligne, billetterie et abonnements. Intégration Bitcoin & Lightning, self-hosted.<br>🔗 <a href="https://be-bop.io/home" target="_blank">be-bop.io</a></div></li>
 </ul>
 
 <!-- Section Éducation & Culture -->
-<h2>🌐 Éducation & Culture</h2>
+<h2 id="education">🌐 Éducation & Culture</h2>
 <ul>
-<li>🌐 Korben → Blog tech, hacking, open source et sécurité<br>
-🔗 <a href="https://korben.info/" target="_blank">korben.info</a></li>
-<li>🗺️ BTC Map → Carte mondiale commerces acceptant Bitcoin<br>
-🔗 <a href="https://btcmap.org/map" target="_blank">btcmap.org/map</a></li>
-<li>🎵 Lasagna Beats → Beats & loops pour production musicale<br>
-🔗 <a href="https://beats.lasagna.pizza/" target="_blank">beats.lasagna.pizza</a></li>
-<li>🎵 Strudel → Exploration et manipulation audio<br>
-🔗 <a href="https://strudel.cc/#JDogcygiW2JkIDxoaCBvaD5dKjIiKS5iYW5rKCJ0cjkwOSIpLmRlYyguNCk%3D" target="_blank">strudel.cc</a></li>
-<li>🎵 LoopMaster → Création et édition boucles audio<br>
-🔗 <a href="https://loopmaster.xyz/" target="_blank">loopmaster.xyz</a></li>
-<li>🎬 WikiFlix → Streaming films domaine public<br>
-🔗 <a href="https://wikiflix.toolforge.org/#/" target="_blank">wikiflix.toolforge.org</a></li>
-<li>🛠️ MathAcademy Cyan → Plateforme mathématiques interactive<br>
-🔗 <a href="https://mathacademy-cyan.vercel.app/" target="_blank">mathacademy-cyan.vercel.app</a></li>
-<li>🌌 APOD → Image astronomique quotidienne NASA<br>
-🔗 <a href="https://apod.nasa.gov/apod/astropix.html" target="_blank">apod.nasa.gov</a></li>
-<li>🌐 Politiscales → Analyse politique interactive<br>
-🔗 <a href="https://politiscales.fr/" target="_blank">politiscales.fr</a></li>
-<li>🌐 TerraGuessr → Globe 3D inégalités mondiales<br>
-🔗 <a href="https://terraguessr.org/" target="_blank">terraguessr.org</a></li>
-<li>📊 Mempool.space → Explorateur Bitcoin<br>
-🔗 <a href="https://mempool.space/fr/" target="_blank">mempool.space</a></li>
-<li>📊 Timechain Calendar → Données réseau & halving<br>
-🔗 <a href="https://timechaincalendar.com" target="_blank">timechaincalendar.com</a></li>
-<li>📊 Clark Moody Dashboard → Vue globale Bitcoin<br>
-🔗 <a href="https://dashboard.clarkmoody.com" target="_blank">dashboard.clarkmoody.com</a></li>
-<li>📊 Wicked Smart Bitcoin → Visualisations avancées Bitcoin<br>
-🔗 <a href="https://wickedsmartbitcoin.com" target="_blank">wickedsmartbitcoin.com</a></li>
-<li>📊 bitbo.io → Dashboard Bitcoin Mining & réseau<br>
-🔗 <a href="https://bitbo.io" target="_blank">bitbo.io</a></li>
-<li>🛠️ Be-BOP → Monétisation éthique, billetterie et paiements<br>
-🔗 <a href="https://be-bop.io/home" target="_blank">be-bop.io/home</a></li>
-<li>📚 Transmission de la liberté → Livres éducatifs Bitcoin & liberté<br>
-🔗 <a href="https://linktr.ee/scuba_wizard" target="_blank">linktr.ee/scuba_wizard</a></li>
+<li><span class="card-title">🛠️ Futurepedia</span>
+<div class="card-desc">Répertoire des outils d’IA et technologies émergentes, trié par catégorie. Ressources pour développeurs et passionnés.<br>🔗 <a href="https://future-pedia.com/fr/" target="_blank">future-pedia.com</a></div></li>
+
+<li><span class="card-title">🛠️ Loot Drop</span>
+<div class="card-desc">Vivier de projets abandonnés pour inspiration et apprentissage. Exploration de concepts innovants ou ratés.<br>🔗 <a href="https://www.loot-drop.io/" target="_blank">loot-drop.io</a></div></li>
+
+<li><span class="card-title">🛠️ Textarea</span>
+<div class="card-desc">Éditeur de texte en ligne léger, fonctionne entièrement dans l’URL, idéal pour notes temporaires et prototypage rapide.<br>🔗 <a href="https://textarea.my/#VY9NTgMxDIX3PcVjA" target="_blank">textarea.my</a></div></li>
+
+<li><span class="card-title">🛠️ Untype</span>
+<div class="card-desc">Plateforme pour créer et éditer du contenu sans code, interface intuitive et collaborative.<br>🔗 <a href="https://untype.app/" target="_blank">untype.app</a></div></li>
+
+<li><span class="card-title">📱 iOS App</span>
+<div class="card-desc">Application mobile pour utilitaires variés, productivité et organisation.<br>🔗 <a href="https://apps.apple.com/app/id1049254261" target="_blank">apps.apple.com</a></div></li>
+
+<li><span class="card-title">🛠️ OmniTools</span>
+<div class="card-desc">Utilitaires web pour images, JSON, PDF, vidéo et calculs. Productivité et explorations diverses.<br>🔗 <a href="https://omnitools.app/" target="_blank">omnitools.app</a></div></li>
+
+<li><span class="card-title">🛠️ json2map</span>
+<div class="card-desc">Visualisation arborescente JSON pour debug et exploration de structures complexes.<br>🔗 <a href="https://www.json2map.com/" target="_blank">json2map.com</a></div></li>
+
+<li><span class="card-title">📊 Mempool.space</span>
+<div class="card-desc">Explorateur Bitcoin temps réel, frais et blocs, monitoring réseau.<br>🔗 <a href="https://mempool.space/fr/" target="_blank">mempool.space</a></div></li>
+
+<li><span class="card-title">📊 Timechain Calendar</span>
+<div class="card-desc">Données réseau Bitcoin, halving et dimension culturelle du réseau.<br>🔗 <a href="https://timechaincalendar.com" target="_blank">timechaincalendar.com</a></div></li>
+
+<li><span class="card-title">📊 Clark Moody Dashboard</span>
+<div class="card-desc">Vue globale sur Bitcoin, sécurité, UTXO et Lightning.<br>🔗 <a href="https://dashboard.clarkmoody.com" target="_blank">dashboard.clarkmoody.com</a></div></li>
+
+<li><span class="card-title">📊 Wicked Smart Bitcoin</span>
+<div class="card-desc">Visualisations avancées Bitcoin, standard réseau et suivi métriques.<br>🔗 <a href="https://wickedsmartbitcoin.com" target="_blank">wickedsmartbitcoin.com</a></div></li>
+
+<li><span class="card-title">📊 bitbo.io</span>
+<div class="card-desc">Dashboard Bitcoin, mining et réseau.<br>🔗 <a href="https://bitbo.io" target="_blank">bitbo.io</a></div></li>
+
+<li><span class="card-title">🛠️ Aesty Covers</span>
+<div class="card-desc">Génération visuels de couverture pour storytelling et marketing.<br>🔗 <a href="https://covers.aesty.ai/" target="_blank">covers.aesty.ai</a></div></li>
 </ul>
 
-<!-- Section Boutiques Bitcoin & Services -->
-<h2>💰 Boutiques Bitcoin & Services</h2>
+<!-- Section Boutiques & Services -->
+<h2 id="shops">💰 Boutiques & Services</h2>
 <ul>
-<li>💰 B Market 21 → Boutique en ligne Bitcoin-friendly<br>
-🔗 <a href="https://bmarket21.com/" target="_blank">bmarket21.com</a></li>
-<li>💰 Sulina Derm → Soins naturels paiement Bitcoin<br>
-🔗 <a href="https://sulinaderm.com/" target="_blank">sulinaderm.com</a></li>
-<li>💰 Drink Bob → Boissons & accessoires Bitcoin<br>
-🔗 <a href="https://drink-bob.com/" target="_blank">drink-bob.com</a></li>
-<li>💰 BitcoinStore → Matériel, livres, accessoires Bitcoin<br>
-🔗 <a href="https://bitcoinstore.fr/" target="_blank">bitcoinstore.fr</a></li>
-<li>💰 BitcoinBook → Boutique en ligne Bitcoin<br>
-🔗 <a href="https://bitcoinbook.shop/collections/french" target="_blank">bitcoinbook.shop</a></li>
-<li>💰 Bitcoin Bazar → Boutique physique & en ligne<br>
-🔗 <a href="https://bitcoinbazar.fr/" target="_blank">bitcoinbazar.fr</a></li>
+<li><span class="card-title">💰 B Market 21</span>
+<div class="card-desc">Boutique Bitcoin-friendly pour nutrition et lifestyle.<br>🔗 <a href="https://bmarket21.com/" target="_blank">bmarket21.com</a></div></li>
+
+<li><span class="card-title">💰 Sulina Derm</span>
+<div class="card-desc">Produits artisanaux soins peau, paiement Bitcoin.<br>🔗 <a href="https://sulinaderm.com/" target="_blank">sulinaderm.com</a></div></li>
+
+<li><span class="card-title">💰 Drink Bob</span>
+<div class="card-desc">Boissons et accessoires Bitcoin-friendly.<br>🔗 <a href="https://drink-bob.com/" target="_blank">drink-bob.com</a></div></li>
+
+<li><span class="card-title">💰 BitcoinStore</span>
+<div class="card-desc">Vente hardware wallets, livres, accessoires Bitcoin.<br>🔗 <a href="https://bitcoinstore.fr/" target="_blank">bitcoinstore.fr</a></div></li>
+
+<li><span class="card-title">💰 BitcoinBook</span>
+<div class="card-desc">Livres et supports éducatifs Bitcoin en français.<br>🔗 <a href="https://bitcoinbook.shop/collections/french" target="_blank">bitcoinbook.shop</a></div></li>
+
+<li><span class="card-title">💰 Bitcoin Bazar</span>
+<div class="card-desc">Boutique physique et en ligne Bitcoin, hardware wallets et backups.<br>🔗 <a href="https://bitcoinbazar.fr/" target="_blank">bitcoinbazar.fr</a></div></li>
 </ul>
 
-<!-- Section Réseaux décentralisés & Répertoires -->
-<h2>🌐 Réseaux décentralisés & Répertoires</h2>
+<!-- Section Réseaux & Répertoires -->
+<h2 id="networks">🌐 Réseaux & Répertoires</h2>
 <ul>
-<li>🌍 Club Orange → Réseau social Bitcoiners<br>
-🔗 <a href="https://signup.cluborange.org/co/famas" target="_blank">signup.cluborange.org</a></li>
-<li>🌐 Nostr → Protocole ouvert décentralisé<br>
-🔗 <a href="https://nostr.fr/" target="_blank">nostr.fr</a></li>
-<li>🌐 NostrZap → Interface Nostr<br>
-🔗 <a href="https://www.nostrzap.com/npub1yh2aytq422srfl54ul3qs7q2n0atx4fdfw95zdzfvznyz2njhckqg6l33l" target="_blank">nostrzap.com</a></li>
-<li>🌐 ProfileStr → Gestion identité Nostr<br>
-🔗 <a href="https://profilestr.com/profile/npub1yh2aytq422srfl54ul3qs7q2n0atx4fdfw95zdzfvznyz2njhckqg6l33l" target="_blank">profilestr.com</a></li>
-<li>🌐 Flare → Agrégateur Nostr, Mastodon, Bluesky<br>
-🔗 <a href="https://flareapp.moe/" target="_blank">flareapp.moe</a></li>
-<li>📚 BTC Directory → Annuaire Bitcoin FR & internat<br>
-🔗 <a href="https://btcdir.org/" target="_blank">btcdir.org</a></li>
-<li>📚 Bitzy → Annuaire Bitcoin & crypto<br>
-🔗 <a href="https://www.bitzy.com/" target="_blank">bitzy.com</a></li>
-<li>📚 KYCnot.me → Services crypto sans KYC<br>
-🔗 <a href="https://kycnot.me/" target="_blank">kycnot.me</a></li>
-<li>🛠️ Loot Drop → Projets abandonnés, inspiration<br>
-🔗 <a href="https://www.loot-drop.io/" target="_blank">loot-drop.io</a></li>
-<li>🛠️ Textarea → Éditeur texte léger, rapide<br>
-🔗 <a href="https://textarea.my/#VY9NTgMxDIX3PcVjA" target="_blank">textarea.my</a></li>
-<li>🛠️ Untype → Création & édition contenu sans code<br>
-🔗 <a href="https://untype.app/" target="_blank">untype.app</a></li>
-<li>🛠️ Futurepedia → Répertoire outils IA<br>
-🔗 <a href="https://future-pedia.com/fr/" target="_blank">future-pedia.com</a></li>
-<li>🛠️ QrCode Draw (Swtch) → Générateur QR codes<br>
-🔗 <a href="https://research.swtch.com/qr/draw/" target="_blank">research.swtch.com/qr/draw/</a></li>
-<li>🛠️ itoa.hex.dance → Convertisseur nombres<br>
-🔗 <a href="https://itoa.hex.dance/" target="_blank">itoa.hex.dance</a></li>
-<li>🛠️ Neocities → Hébergement sites web<br>
-🔗 <a href="https://neocities.org/" target="_blank">neocities.org</a></li>
-<li>🛠️ json2map → Visualisation JSON<br>
-🔗 <a href="https://www.json2map.com/" target="_blank">json2map.com</a></li>
-<li>🛠️ OmniTools → Utilitaires web<br>
-🔗 <a href="https://omnitools.app/" target="_blank">omnitools.app</a></li>
-<li>🛠️ Awesome AI for Science → Répertoire IA scientifique<br>
-🔗 <a href="https://zdoc.app/en/ai-boost/awesome-ai-for-science" target="_blank">zdoc.app</a></li>
-<li>🛠️ Tibillet → Billetterie coopérative open source<br>
-🔗 <a href="https://tibillet.org/fr/" target="_blank">tibillet.org</a></li>
-<li>🛠️ Aesty Covers → Génération visuels de couverture<br>
-🔗 <a href="https://covers.aesty.ai/" target="_blank">covers.aesty.ai</a></li>
-<li>📱 iOS App → Application utilitaires variés<br>
-🔗 <a href="https://apps.apple.com/app/id1049254261" target="_blank">apps.apple.com</a></li>
-</ul>
+<li><span class="card-title">🌍 Club Orange</span>
+<div class="card-desc">Réseau social mondial réservé aux Bitcoiners, communauté qualitative.<br>🔗 <a href="https://signup.cluborange.org/co/famas" target="_blank">signup.cluborange.org</a></div></li>
 
-</div>
+<li><span class="card-title">🌐 Nostr</span>
+<div class="card-desc">Protocole ouvert, résistant à la censure et identité cryptographique.<br>🔗 <a href="https://nostr.fr/" target="_blank">nostr.fr</a></div></li>
+
+<li><span class="card-title">🌐 NostrZap</span>
+<div class="card-desc">Interface pour Nostr, gestion de clés et publication de contenus.<br>🔗 <a href="https://www.nostrzap.com/npub1yh2aytq422srfl54ul3qs7q2n0atx4fdfw95zdzfvznyz2njhckqg6l33l" target="_blank">nostrzap.com</a></div></li>
+
+<li><span class="card-title">🌐 ProfileStr</span>
+<div class="card-desc">Gestion de profil et identité Nostr.<br>🔗 <a href="https://profilestr.com/profile/npub1yh2aytq422srfl54ul3qs7q2n0atx4fdfw95zdzfvznyz2njhckqg6l33l" target="_blank">profilestr.com</a></div></li>
+
+<li><span class="card-title">🌐 Flare</span>
+<div class="card-desc">Agrégateur réseaux décentralisés compatible Nostr, Mastodon, Bluesky.<br>🔗 <a href="https://flareapp.moe/" target="_blank">flareapp.moe</a></div></li>
+
+<li><span class="card-title">📚 BTC Directory</span>
+<div class="card-desc">Annuaire Bitcoin, navigation par catégories, ressources FR & internationales.<br>🔗 <a href="https://btcdir.org/" target="_blank">btcdir.org</a></div></li>
+
+<li><span class="card-title">📚 Bitzy</span>
+<div class="card-desc">Annuaire Bitcoin & crypto, classement et recherche rapide.<br>🔗 <a href="https://www.bitzy.com/" target="_blank">bitzy.com</a></div></li>
+
+<li><span class="card-title">📚 KYCnot.me</span>
+<div class="card-desc">Services crypto sans KYC, filtrage par type et crypto.<br>🔗 <a href="https://kycnot.me/" target="_blank">kycnot.me</a></div></li>
+</ul>
 
 <div class="footer">
-  <a href="#top">↑ Haut de page</a> ·
-  <a href="index.html">Accueil</a>
+  <a href="#top">↑ Haut de page</a> · <a href="index.html">Accueil</a>
 </div>
 
+</div>
 </body>
 </html>

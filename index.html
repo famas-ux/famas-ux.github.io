@@ -31,11 +31,12 @@ h1, h2 {
 
 /* Articles importants : bordure plus lumineuse, texte vert fluo */
 .article-important {
-  border: 2px solid #B0FF4D; /* encadrement encore plus lumineux */
-  padding: 14px;
+  border: 2px solid #39ff14; /* vert fluo lumineux */
+  box-shadow: 0 0 12px #39ff14;
+  padding: 16px;
   margin: 16px 0;
   background: rgba(124,252,0,0.08); /* fond légèrement vert fluo */
-  color: #7CFC00; /* texte vert fluo */
+  color: #baff9c; /* texte plus lumineux */
   font-weight: bold;
 }
 
@@ -49,11 +50,7 @@ h1, h2 {
 }
 
 .article-important a {
-  color: #7CFC00;
-  text-decoration: none;
-}
-
-.article-important a:hover {
+  color: #baff9c;
   text-decoration: underline;
 }
 
@@ -98,6 +95,19 @@ h1, h2 {
 <!-- Section Articles -->
 <div class="section">
 <h2>Articles</h2>
+
+<!-- ARTICLE IMPORTANT – Boîte à outils placé en premier -->
+<a id="boite-a-outils"></a>
+<div class="article-important">
+  <strong>
+    <a href="2026-02-01-boite-a-outils.html">
+      🧰 Boîte à outils Bitcoin
+    </a>
+  </strong>
+  <p>
+    Sélection d’outils Bitcoin, privacy et souveraineté numérique.
+  </p>
+</div>
 
 <!-- Article important : Islam et Bitcoin -->
 <div class="article-important">

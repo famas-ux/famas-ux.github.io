@@ -6,175 +6,165 @@
 <title>Bitcoin vu par Famas</title>
 
 <style>
-body {
-  margin: 12px;
-  font-family: "Courier New", Monaco, monospace;
-  background: #000;
-  color: #9fb3a1;
-  line-height: 1.6;
+body{
+  margin:12px;
+  font-family:"Courier New", Monaco, monospace;
+  background:#000;
+  color:#9fb3a1;
+  line-height:1.6;
 }
 
-h1, h2 {
-  color: #cfe3d1;
-  text-align: center;
-  margin: 0.8em 0;
+h1{
+  text-align:center;
+  color:#7CFF7C;
+  margin-bottom:6px;
 }
 
-/* Articles courants : bordure vert fluo, texte gris-vert */
-.article {
-  border: 2px solid #7CFC00;
-  padding: 12px;
-  margin: 16px 0;
-  background: rgba(80,120,100,0.05);
-  color: #9fb3a1;
+h2{
+  color:#cfe3d1;
+  margin-top:0;
 }
 
-/* Articles importants : bordure plus lumineuse, texte vert fluo */
-.article-important {
-  border: 2px solid #39ff14;
-  box-shadow: 0 0 12px #39ff14;
-  padding: 16px;
-  margin: 16px 0;
-  background: rgba(124,252,0,0.08);
-  color: #baff9c;
-  font-weight: bold;
+.section-title{
+  margin:28px 0 12px;
+  color:#39ff14;
+  font-size:1.4em;
+  border-bottom:1px solid #39ff14;
+  padding-bottom:6px;
 }
 
-.article a {
-  color: #cfe3d1;
-  text-decoration: none;
+/* CARTES IMPORTANTES */
+.article-complet{
+  border:2px solid #39ff14;
+  box-shadow:0 0 12px #39ff14;
+  padding:16px;
+  margin:16px 0;
+  background:rgba(124,252,0,0.08);
+  color:#baff9c;
 }
 
-.article a:hover {
-  text-decoration: underline;
+.article-complet a{
+  color:#baff9c;
+  text-decoration:underline;
 }
 
-.article-important a {
-  color: #baff9c;
-  text-decoration: underline;
+/* CARTES COURANTES */
+.article{
+  border:1px solid #5f8f7a;
+  padding:14px;
+  margin:14px 0;
+  background:rgba(80,120,100,0.05);
 }
 
-/* Footer */
-.footer {
-  margin-top: 40px;
-  padding-top: 14px;
-  border-top: 1px solid #2a3a32;
-  text-align: center;
+.article a{
+  color:#cfe3d1;
+  text-decoration:none;
 }
 
-.footer a {
-  display: inline-block;
-  margin: 6px 10px;
-  padding: 6px 10px;
-  text-decoration: none;
-  color: #cfe3d1;
-  border: 1px solid #3a5a4a;
+.article a:hover{
+  text-decoration:underline;
 }
 
-.footer a:hover {
-  background: rgba(100,160,130,0.15);
+.article-date{
+  font-size:0.85em;
+  color:#6f8578;
+  margin-bottom:6px;
 }
 
-/* Image accueil */
-#hero-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto 20px auto;
+/* FOOTER */
+.footer{
+  margin-top:40px;
+  padding-top:14px;
+  border-top:1px solid #2a3a32;
+  text-align:center;
+}
+
+.footer a{
+  display:inline-block;
+  margin:6px 10px;
+  padding:6px 10px;
+  text-decoration:none;
+  color:#cfe3d1;
+  border:1px solid #3a5a4a;
+}
+
+.footer a:hover{
+  background:rgba(100,160,130,0.15);
 }
 </style>
 </head>
 
 <body id="top">
 
-<!-- Image d'accueil -->
-<img src="Komainu.PNG" alt="Komainu" id="hero-img">
-
 <h1>Bitcoin vu par Famas</h1>
 
-<!-- Section Articles -->
-<div class="section">
-<h2>Articles</h2>
+<!-- ================= ARTICLES IMPORTANTS ================= -->
+<div class="section-title">Articles importants</div>
 
-<!-- ARTICLE IMPORTANT – Boîte à outils -->
-<a id="boite-a-outils"></a>
-<div class="article-important">
-  <strong>
-    <a href="2026-02-01-boite-a-outils.html">
-      🧰 Boîte à outils Bitcoin
-    </a>
-  </strong>
+<!-- 1 — Boîte à outils -->
+<div class="article-complet">
+  <h2>🧰 Boîte à outils Bitcoin</h2>
   <p>
-    Sélection d’outils Bitcoin, privacy et souveraineté numérique.
+    Sélection d’outils Bitcoin, privacy, éducation, wallets,
+    réseaux décentralisés et dashboards.
   </p>
+  <a href="boite-a-outils-bitcoin.html">→ Accéder à la boîte à outils</a>
 </div>
 
-<!-- ARTICLE IMPORTANT – Bibliothèque -->
-<a id="bibliotheque"></a>
-<div class="article-important">
-  <strong>
-    <a href="2026-02-01-bibliotheque-bitcoin.html">
-      📚 Bibliothèque Bitcoin & Économie 🇦🇹
-    </a>
-  </strong>
+<!-- 2 — Bibliothèque -->
+<div class="article-complet">
+  <h2>📚 Bibliothèque Bitcoin & Économie 🇦🇹</h2>
   <p>
-    Sélection d’ouvrages classiques et contemporains sur Bitcoin et économie autrichienne.
+    Ouvrages fondamentaux : Bitcoin, école autrichienne,
+    économie, philosophie et souveraineté.
   </p>
+  <a href="bibliotheque-bitcoin-autrichienne.html">→ Accéder à la bibliothèque</a>
 </div>
 
-<!-- ARTICLE COURANT – Bitcoin en droit islamique -->
+<!-- 3 — About Me -->
+<div class="article-complet">
+  <h2>👤 About Famas — Franck f®@n©️&lt; Satopolys</h2>
+  <p>
+    Présentation complète : parcours Bitcoin,
+    identité Nostr, certifications Plan B Academy
+    et liens publics.
+  </p>
+  <a href="2026-02-01-about-me.html">→ Lire l’article About.me</a>
+</div>
+
+<!-- ================= ARTICLES COURANTS ================= -->
+<div class="section-title">Articles courants</div>
+
+<!-- 4 — Bitcoin islam -->
 <div class="article">
   <div class="article-date">21 novembre 2025</div>
   <strong>
-    <a href="2026-01-30-Islam-et-bitcoin.html">
+    <a href="bitcoin-droit-islamique.html">
       Bitcoin en droit islamique : licite ou interdit ?
     </a>
   </strong>
   <p>
-    Analyse vulgarisée du statut de Bitcoin en droit islamique à partir des principes classiques du fiqh des transactions.
+    Analyse vulgarisée du statut de Bitcoin
+    à partir des principes classiques du fiqh des transactions.
   </p>
 </div>
 
-<!-- Carte About Famas -->
-<div class="card">
-  <h2>About Famas — Franck f®@n©️< Satopolys</h2>
-
-  <p>
-    Parcours, identité et certifications autour de Bitcoin, Nostr et des outils
-    de souveraineté numérique.
-  </p>
-
-  <ul>
-    <li>Présentation & philosophie</li>
-    <li>Identité Nostr (npub, NIP-05, LN)</li>
-    <li>Certifications Plan B Academy</li>
-    <li>Liens publics & contact</li>
-  </ul>
-
-  <p>
-    <a href="2026-02-01-about-me.html">→ Lire l’article</a>
-  </p>
-</div>
-  
-<!-- ARTICLE COURANT – Créer une association Bitcoin -->
+<!-- 5 — Association -->
 <div class="article">
   <div class="article-date">21 novembre 2025</div>
   <strong>
-    <a href="2026-01-30-association-bitcoin.html">
+    <a href="association-bitcoin-loi-1901.html">
       Créer une association Bitcoin (loi 1901)
     </a>
   </strong>
   <p>
-    Cadre légal, objectifs et étapes clés pour structurer un projet Bitcoin communautaire.
+    Cadre légal, objectifs et étapes clés
+    pour structurer un projet Bitcoin communautaire.
   </p>
 </div>
 
-</div>
-
-<!-- Footer -->
 <div class="footer">
   <a href="#top">↑ Haut de page</a>
-  <a href="index.html">Accueil</a>
 </div>
 
 </body>

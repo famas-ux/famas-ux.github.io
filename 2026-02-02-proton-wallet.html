@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PROTON WALLET — Guide d’utilisation — Bitcoin vu par Famas</title>
+
+<style>
+body{
+  margin:0;
+  background:#000;
+  color:#9fb7a1;
+  font-family:"Courier New", monospace;
+  font-size:16px;
+}
+
+header{
+  padding:26px 14px;
+  text-align:center;
+  border-bottom:1px solid #355;
+}
+
+h1{
+  margin:0;
+  color:#7CFF7C;
+  letter-spacing:1px;
+  font-size:1.7rem;
+}
+
+h2{
+  margin-top:8px;
+  font-weight:normal;
+  color:#b6ffb6;
+  font-size:1rem;
+}
+
+h3{
+  margin-top:14px;
+  font-weight:normal;
+  color:#caffca;
+}
+
+main{
+  padding:14px;
+  display:flex;
+  justify-content:center;
+}
+
+.container{
+  width:100%;
+  max-width:480px;
+}
+
+/* TEXTE */
+.article-title{
+  margin-top:20px;
+  color:#7CFF7C;
+  font-size:1.2rem;
+}
+
+p{
+  line-height:1.6;
+  margin:14px 0;
+}
+
+ul, ol{
+  padding-left:18px;
+}
+
+li{
+  margin:8px 0;
+}
+
+/* BLOCS */
+.block{
+  border:1px solid #355;
+  padding:14px;
+  margin:22px 0;
+  background:#050805;
+}
+
+.block.important{
+  border:2px solid #7CFF7C;
+  background:#050a05;
+  color:#caffca;
+}
+
+pre{
+  background:#050805;
+  border:1px solid #355;
+  padding:12px;
+  overflow-x:auto;
+  color:#baff9c;
+  margin:14px 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family:"Courier New", monospace;
+}
+
+/* META */
+.meta{
+  font-size:14px;
+  color:#6f8f7a;
+  margin-top:30px;
+}
+
+/* FOOTER */
+footer{
+  margin-top:40px;
+  padding:14px 0;
+  border-top:1px solid #355;
+  text-align:center;
+  font-size:14px;
+}
+
+a{
+  color:#7CFF7C;
+  text-decoration:none;
+}
+
+a:hover{
+  text-decoration:underline;
+}
+
+@media (min-width:768px){
+  .container{ max-width:720px; }
+}
+</style>
+</head>
+
+<body>
+
+<a id="top"></a>
+
+<header>
+  <h1>PROTON WALLET</h1>
+  <h2>Guide d’utilisation — Bitcoin vu par Famas</h2>
+</header>
+
+<main>
+<div class="container">
+
+<h2 class="article-title">Auto-garde / Confidentialité / Facturation par e-mail</h2>
+
+<h3>🔍 Introduction</h3>
+<p>Proton Wallet est un portefeuille Bitcoin non-custodial, développé par Proton (Suisse). Il permet de détenir, envoyer et recevoir du Bitcoin tout en conservant le contrôle total sur vos clés privées.</p>
+
+<div class="block important">
+✅ Fonctionnalité centrale : Envoyer/recevoir du Bitcoin via une adresse e-mail Proton — idéal pour la facturation professionnelle.<br>
+<a href="https://proton.me/blog/proton-wallet-launch" target="_blank">Annonce officielle</a><br>
+<a href="https://planb.academy/fr/tutorials/wallet/desktop/proton-wallet-0bee0bba-ab62-4db0-8c63-b2ad698ca178" target="_blank">Tutoriel complet</a>
+</div>
+
+<h3>1️⃣ Qu’est-ce que Proton Wallet ?</h3>
+<ul>
+  <li>🔐 Non-custodial → vous contrôlez vos clés</li>
+  <li>🛡️ Chiffrement de bout en bout</li>
+  <li>🚫 Zero-access → Proton ne voit ni ne contrôle vos fonds</li>
+  <li>📜 Code open source</li>
+  <li>🇨🇭 Développé en Suisse</li>
+</ul>
+<p>Proton ne peut ni accéder à vos fonds, ni voir vos clés, ni signer des transactions.<br>
+<a href="https://proton.me/blog/proton-wallet-security-model" target="_blank">Modèle de sécurité</a></p>
+
+<h3>2️⃣ Création et configuration initiale</h3>
+<ol>
+  <li>Créez ou utilisez un compte Proton existant</li>
+  <li>Activez Proton Wallet depuis l’interface</li>
+  <li>Générez un nouveau wallet Bitcoin</li>
+  <li>Sauvegardez votre phrase de récupération (seed phrase)</li>
+</ol>
+<div class="block important">
+⚠️ La seed phrase est critique :<br>
+→ Permet la restauration du wallet<br>
+→ Si perdue → vos bitcoins sont irrécupérables<br>
+Proton ne dispose d’aucun moyen de restauration.
+</div>
+
+<h3>3️⃣ Modèle de sécurité</h3>
+<ul>
+  <li>Clés privées chiffrées localement</li>
+  <li>Déchiffrement uniquement avec votre mot de passe</li>
+  <li>Aucune clé stockée en clair chez Proton</li>
+  <li>Signature des transactions côté client</li>
+</ul>
+<p>Recommandations :</p>
+<ul>
+  <li>Mot de passe fort et unique</li>
+  <li>Activation de 2FA</li>
+  <li>Sauvegarde papier de la seed phrase</li>
+  <li>Activation de Proton Sentinel</li>
+  <li>Verrouillage biométrique sur mobile</li>
+</ul>
+<p><a href="https://proton.me/support/wallet-protection" target="_blank">Protection du wallet</a></p>
+
+<h3>4️⃣ Fonctions Bitcoin classiques</h3>
+<ul>
+  <li>📥 Recevoir via adresse BTC native</li>
+  <li>📤 Envoyer vers n’importe quel wallet</li>
+  <li>💰 Choisir les frais de transaction</li>
+  <li>📊 Consulter l’historique</li>
+</ul>
+<p>→ Fonctionne comme un wallet Bitcoin standard non-custodial.</p>
+
+<h3>5️⃣ Bitcoin via e-mail — Fonctionnalité centrale</h3>
+<p>Principe : Envoyer du Bitcoin à une adresse e-mail Proton, sans partager d’adresse BTC longue. Une adresse unique est générée par transaction.</p>
+<ul>
+  <li>✅ Suppression des erreurs de copier-coller</li>
+  <li>✅ Expérience proche d’un paiement classique</li>
+  <li>✅ Adoption facilitée pour les non-techniciens</li>
+  <li>✅ Confidentialité renforcée</li>
+</ul>
+<p><a href="https://proton.me/support/wallet-bitcoin-via-email" target="_blank">Plus d’infos</a></p>
+
+<h3>6️⃣ Inviter des contacts</h3>
+<ul>
+  <li>Invitation automatique envoyée si l’adresse n’est pas utilisée</li>
+  <li>Fond conservé en sécurité</li>
+  <li>Destinataire guidé pour activer son wallet</li>
+  <li>Paiement reçu après activation</li>
+</ul>
+
+<h3>7️⃣ Usages professionnels</h3>
+<ul>
+  <li>🧑‍💼 Freelances</li>
+  <li>🧑‍💼 Consultants</li>
+  <li>💻 Prestataires numériques</li>
+  <li>💰 Honoraires professionnels</li>
+  <li>🌍 Paiements internationaux</li>
+</ul>
+<p>Problèmes résolus :</p>
+<ul>
+  <li>Adresses longues et complexes</li>
+  <li>Erreurs humaines</li>
+  <li>Clients non techniques</li>
+  <li>Support client chronophage</li>
+</ul>
+<p>Solution Proton : l’e-mail = identifiant de paiement, pas de QR code requis, facturation simplifiée.</p>
+
+<h3>8️⃣ Facturation Bitcoin par e-mail</h3>
+<p>Un professionnel peut :</p>
+<ul>
+  <li>📄 Envoyer une facture PDF classique</li>
+  <li>📩 Indiquer une adresse e-mail Proton</li>
+  <li>💸 Recevoir un paiement Bitcoin sans adresse BTC visible</li>
+</ul>
+<pre>
+Paiement Bitcoin
+Adresse e-mail Proton : contact@proton.me
+</pre>
+
+<h3>9️⃣ Template de facture Bitcoin</h3>
+<pre>
+FACTURE N° 2026-001  
+Date : 24/01/2026
+
+Émetteur  
+Nom / Société : [Nom]  
+Email Bitcoin : contact@proton.me
+
+Client  
+Nom : [Client]
+
+Description  
+Prestation de conseil – Janvier 2026
+
+Montant  
+0.012345 BTC  
+Conversion fiat indicative à l’émission
+
+Paiement  
+Méthode : Bitcoin via e-mail  
+Email : contact@proton.me  
+Message : Facture 2026-001
+
+Conditions  
+Paiement à réception  
+Transaction Bitcoin irréversible
+</pre>
+
+<h3>🔟 Message email simplifié pour le client</h3>
+<pre>
+Bonjour,
+
+Merci d’effectuer le règlement suivant :
+
+Montant : 0.012345 BTC
+Paiement Bitcoin via e-mail
+Destinataire : contact@proton.me
+Message à indiquer : Facture 2026-001
+
+Cordialement
+</pre>
+
+<h3>1️⃣ Bonnes pratiques</h3>
+<ul>
+  <li>✅ Utiliser une adresse Proton dédiée à la facturation</li>
+  <li>✅ Toujours demander un message de paiement</li>
+  <li>✅ Conserver l’historique des transactions</li>
+  <li>✅ Noter la conversion fiat pour la comptabilité</li>
+  <li>✅ Éviter de stocker de grosses sommes</li>
+</ul>
+
+<h3>2️⃣ Limites à connaître</h3>
+<ul>
+  <li>⚠️ Fonction limitée à l’écosystème Proton</li>
+  <li>⚠️ Le destinataire doit activer Proton Wallet</li>
+  <li>⚠️ Bitcoin est irréversible</li>
+  <li>⚠️ Pas de Lightning Network</li>
+  <li>⚠️ Wallet connecté à Internet</li>
+</ul>
+
+<h3>3️⃣ Résumé exécutif</h3>
+<p>Proton Wallet est un portefeuille Bitcoin non-custodial permettant d’envoyer et recevoir des paiements directement via une adresse e-mail Proton. Particulièrement adapté à la facturation d’honoraires et services professionnels, il réduit la complexité et les erreurs.</p>
+
+<h3>📚 Ressources officielles</h3>
+<ul>
+  <li><a href="https://planb.academy/fr/tutorials/wallet/desktop/proton-wallet-0bee0bba-ab62-4db0-8c63-b2ad698ca178" target="_blank">Tutoriel complet</a></li>
+  <li><a href="https://proton.me/blog/proton-wallet-launch" target="_blank">Annonce officielle</a></li>
+  <li><a href="https://proton.me/blog/proton-wallet-security-model" target="_blank">Modèle de sécurité</a></li>
+  <li><a href="https://proton.me/support/wallet-bitcoin-via-email" target="_blank">Bitcoin via e-mail</a></li>
+  <li><a href="https://proton.me/support/wallet-protection" target="_blank">Protection du wallet</a></li>
+</ul>
+
+<pre>
+⚡️👉franck@rizful.com
+</pre>
+
+<div class="meta">
+Publié le 01 février 2026<br>
+Bitcoin vu par Famas
+</div>
+
+</div>
+</main>
+
+<footer>
+  <a href="#top">↑ Haut de page</a> ·
+  <a href="/index.html">Accueil</a>
+</footer>
+
+</body>
+</html>

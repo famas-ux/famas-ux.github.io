@@ -17,7 +17,7 @@ h1,h2{
   text-align:center;
   margin:.8em 0;
 }
-.section-title{
+h2.section-title{
   text-align:left;
   margin-top:30px;
   color:#39ff14;
@@ -25,67 +25,29 @@ h1,h2{
   border-bottom:1px solid #39ff14;
   padding-bottom:6px;
 }
+ul{margin-left:20px; margin-bottom:20px;}
+li{margin-bottom:6px;}
+li ul{margin-left:18px; margin-top:4px;}
+a{color:#39ff14; text-decoration:underline;}
+a:hover{text-decoration:none;}
 .card{
   border:1px solid #39ff14;
   box-shadow:0 0 12px #39ff14;
-  background:rgba(57,255,20,.08);
+  background:rgba(124,252,0,.08);
   padding:16px;
   margin:16px 0;
-  transition: all 0.3s ease;
 }
-.card h2{
-  color:#baff9c;
-  font-size:1.2em;
-  margin-bottom:4px;
-}
-.card h3{
-  color:#39ff14;
-  font-size:.95em;
-  margin-bottom:6px;
-}
-.card a{
-  color:#39ff14;
-  font-weight:bold;
-  text-decoration:underline;
-}
-.card a:hover{
-  color:#ffffff;
-  text-shadow:0 0 8px #39ff14;
-  text-decoration:none;
-}
-.card:hover{
-  background: rgba(57,255,20,.15);
+.download-card{
+  border:2px solid #39ff14;
   box-shadow:0 0 20px #39ff14;
-  transform: scale(1.02);
+  background:rgba(124,252,0,.12);
+  padding:20px;
+  margin:20px 0;
+  text-align:center;
+  font-weight:bold;
 }
-/* Footer téléchargement mis en valeur */
-.download-card {
-  background: rgba(57,255,20,0.25);
-  border: 2px solid #39ff14;
-  box-shadow: 0 0 25px #39ff14;
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
-.download-card a {
-  color: #000;
-  background: #39ff14;
-  padding: 2px 6px;
-  border-radius: 3px;
-  text-decoration: none;
-  font-weight: bold;
-}
-.download-card a:hover {
-  color: #000;
-  text-shadow: 0 0 10px #39ff14;
-  background: #baff9c;
-}
-.download-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 35px #39ff14;
-}
-
 .footer{
-  margin-top:40px;
+  margin-top:20px;
   padding-top:14px;
   border-top:1px solid #2a3a32;
   text-align:center;
@@ -101,7 +63,6 @@ h1,h2{
 .footer a:hover{
   background:rgba(100,160,130,.15);
 }
-
 @media screen and (max-width:600px){
   body{margin:8px;font-size:.95em;line-height:1.5}
   .card{padding:12px;margin:12px 0}
@@ -122,150 +83,154 @@ h1,h2{
 
 <div class="container">
 
-<div class="card">
-  <h2>Marie ou l’Esclavage aux États-Unis — Tableau de mœurs américaines (1835)</h2>
-  <h3>Gustave de Beaumont</h3>
-</div>
+  <!-- Liste structurée -->
+  <h2 class="section-title">🏛️ Ouvrages Classiques</h2>
+  <ul>
+    <li><strong>Yves Guyot</strong>
+      <ul>
+        <li>La Propriété : Origine et Évolution — Préface : Benoît Malbranque</li>
+        <li>L’A.B.C. du libre-échange (1913) — Avant-propos : Benoît Malbranque</li>
+        <li>L’impôt sur le revenu (1757)</li>
+        <li>Lettres sur la politique coloniale — Préface : Benoît Malbranque</li>
+      </ul>
+    </li>
+    <li><strong>Ernest Martineau (Institut Coppet)</strong>
+      <ul>
+        <li>Lettres hebdomadaires sur le libre-échange — Tome I</li>
+      </ul>
+    </li>
+    <li><strong>F. Le Trosne (Institut Coppet)</strong>
+      <ul>
+        <li>La Liberté du commerce des grains — Toujours utile et jamais nuisible</li>
+      </ul>
+    </li>
+    <li><strong>André Morellet</strong>
+      <ul>
+        <li>Réfutation de l’ouvrage de Galiani (1770) — Préface : Benoît Malbranque</li>
+      </ul>
+    </li>
+    <li><strong>Paul Leroy-Beaulieu</strong>
+      <ul>
+        <li>De la colonisation chez les peuples modernes (1874) — Préface : Benoît Malbranque</li>
+      </ul>
+    </li>
+    <li><strong>Louis-Paul Abeille</strong>
+      <ul>
+        <li>Écrits physiocratiques — Introduction et notes : Benoît Malbranque</li>
+      </ul>
+    </li>
+    <li><strong>Marc Bompaire</strong>
+      <ul>
+        <li>Quelques spécificités des monnayages médiévaux — Le seigneuriage et autres innovations au temps de Philippe le Bel</li>
+      </ul>
+    </li>
+    <li><strong>Samuel Dupont de Nemours</strong>
+      <ul>
+        <li>Effets des assignats sur le prix du pain (1790)</li>
+      </ul>
+    </li>
+  </ul>
 
-<div class="card">
-  <h2>L’Industrie et la morale considérées dans leurs rapports avec la liberté</h2>
-  <h3>Charles Dunoyer — Préface : Benoît Malbranque</h3>
-</div>
+  <h2 class="section-title">🏛️ École Autrichienne</h2>
+  <ul>
+    <li><strong>Précurseurs</strong>
+      <ul>
+        <li>Frédéric Bastiat — Baccalauréat et Socialisme (1850)</li>
+      </ul>
+    </li>
+    <li><strong>Friedrich A. Hayek</strong>
+      <ul>
+        <li>La Constitution de la liberté (1960)</li>
+        <li>La présomption fatale — Les erreurs du socialisme</li>
+        <li>Abrégé de La Route de la Servitude</li>
+      </ul>
+    </li>
+    <li><strong>Jesús Huerta de Soto</strong>
+      <ul>
+        <li>L’École autrichienne — Marché et créativité entrepreneuriale</li>
+      </ul>
+    </li>
+    <li><strong>Ludwig von Mises</strong>
+      <ul>
+        <li>Le calcul économique en régime socialiste (1920)</li>
+      </ul>
+    </li>
+    <li><strong>Murray Rothbard</strong>
+      <ul>
+        <li>L’éducation gratuite et obligatoire</li>
+      </ul>
+    </li>
+  </ul>
 
-<div class="card">
-  <h2>Écrits économiques — Volume II</h2>
-  <h3>Pierre de Boisguilbert — Correspondance et mémoires additionnels</h3>
-</div>
+  <h2 class="section-title">✍️ Essais & Politique</h2>
+  <ul>
+    <li><strong>Benoît Malbranque</strong>
+      <ul>
+        <li>Le socialisme en chemise brune — Deuxième édition</li>
+        <li>Les théoriciens français de la liberté humaine</li>
+      </ul>
+    </li>
+    <li><strong>Germaine de Staël</strong>
+      <ul>
+        <li>Le Mannequin</li>
+      </ul>
+    </li>
+    <li><strong>Gustave de Beaumont</strong>
+      <ul>
+        <li>Marie ou l’Esclavage aux États-Unis — Tableau de mœurs américaines (1835)</li>
+      </ul>
+    </li>
+    <li><strong>Gustave de Molinari</strong>
+      <ul>
+        <li>La Conquête de la Chine — Préface : Benoît Malbranque</li>
+      </ul>
+    </li>
+    <li><strong>Pierre de Boisguilbert</strong>
+      <ul>
+        <li>Écrits économiques — Volume I — Introduction : Benoît Malbranque</li>
+        <li>Écrits économiques — Volume II — Correspondance et mémoires additionnels</li>
+      </ul>
+    </li>
+    <li><strong>Charles Dunoyer</strong>
+      <ul>
+        <li>L’Industrie et la morale considérées dans leurs rapports avec la liberté — Préface : Benoît Malbranque</li>
+      </ul>
+    </li>
+  </ul>
 
-<div class="card">
-  <h2>Écrits économiques — Volume I</h2>
-  <h3>Pierre de Boisguilbert — Introduction : Benoît Malbranque</h3>
-</div>
+  <h2 class="section-title">📖 Sciences & Philosophie</h2>
+  <ul>
+    <li><strong>James Rachels</strong>
+      <ul>
+        <li>Darwin, Espèce et Éthique</li>
+      </ul>
+    </li>
+  </ul>
 
-<div class="card">
-  <h2>La Conquête de la Chine</h2>
-  <h3>Gustave de Molinari — Préface : Benoît Malbranque</h3>
-</div>
+  <h2 class="section-title">📰 Revues</h2>
+  <ul>
+    <li><strong>Laissons Faire — Revue mensuelle de l'Institut Coppet</strong>
+      <ul>
+        <li>Collection complète — Revues sur l’économie, le libre-échange et les idées classiques</li>
+      </ul>
+    </li>
+  </ul>
 
-<!-- Carte revue Laissons Faire -->
-<div class="card">
-  <h2>Laissons Faire — Revue mensuelle de l'Institut Coppet</h2>
-  <h3>Collection complète</h3>
-  <p>Revues sur l’économie, le libre-échange et les idées classiques</p>
-</div>
+  <!-- Carte téléchargement mis en valeur -->
+  <div class="card download-card">
+    <p>Ces ouvrages sont disponibles en téléchargement libre sur Telegram : 
+       <a href="https://t.me/cerclebitcoin" target="_blank">https://t.me/cerclebitcoin</a>
+    </p>
+    <p>Ou sur simple demande par mail à : 
+       <a href="mailto:Satopolys@proton.me">Satopolys@proton.me</a>
+    </p>
+  </div>
 
-<!-- Ouvrages classiques -->
-
-<div class="card">
-  <h2>Lettres sur la politique coloniale</h2>
-  <h3>Yves Guyot — Préface : Benoît Malbranque</h3>
-</div>
-<div class="card">
-  <h2>La Propriété : Origine et Évolution</h2>
-  <h3>Yves Guyot — Préface : Benoît Malbranque</h3>
-</div>
-<div class="card">
-  <h2>L’A.B.C. du libre-échange (1913)</h2>
-  <h3>Yves Guyot — Avant-propos : Benoît Malbranque</h3>
-</div>
-<div class="card">
-  <h2>L’impôt sur le revenu (1757)</h2>
-  <h3>Yves Guyot</h3>
-</div>
-<div class="card">
-  <h2>Lettres hebdomadaires sur le libre-échange — Tome I</h2>
-  <h3>Ernest Martineau (Institut Coppet)</h3>
-</div>
-<div class="card">
-  <h2>La Liberté du commerce des grains</h2>
-  <h3>F. Le Trosne (Institut Coppet) — Toujours utile et jamais nuisible</h3>
-</div>
-<div class="card">
-  <h2>Réfutation de l’ouvrage de Galiani (1770)</h2>
-  <h3>André Morellet — Préface : Benoît Malbranque</h3>
-</div>
-<div class="card">
-  <h2>De la colonisation chez les peuples modernes (1874)</h2>
-  <h3>Paul Leroy-Beaulieu — Préface : Benoît Malbranque</h3>
-</div>
-<div class="card">
-  <h2>Écrits physiocratiques</h2>
-  <h3>Louis-Paul Abeille — Introduction et notes : Benoît Malbranque</h3>
-</div>
-<div class="card">
-  <h2>Quelques spécificités des monnayages médiévaux</h2>
-  <h3>Marc Bompaire — IRAMAT-CEB, CNRS UMR 5060 — université d’Orléans, EPHE, PSL</h3>
-  <p>bompaire.marc@wanadoo.fr</p>
-</div>
-<div class="card">
-  <h2>Effets des assignats sur le prix du pain (1790)</h2>
-  <h3>Samuel Dupont de Nemours</h3>
-</div>
-
-<!-- École autrichienne & précurseurs -->
-<div class="card">
-  <h2>Baccalauréat et Socialisme (1850)</h2>
-  <h3>Frédéric Bastiat — Précurseur de l’école autrichienne</h3>
-</div>
-<div class="card">
-  <h2>La Constitution de la liberté (1960)</h2>
-  <h3>Friedrich A. Hayek — Traduction : Raoul Audouin</h3>
-</div>
-<div class="card">
-  <h2>La présomption fatale — Les erreurs du socialisme</h2>
-  <h3>Friedrich A. Hayek — Traduction : Raoul Audouin</h3>
-</div>
-<div class="card">
-  <h2>Abrégé de La Route de la Servitude</h2>
-  <h3>Friedrich A. Hayek — Traduction : Gérard Dréan</h3>
-</div>
-<div class="card">
-  <h2>L’École autrichienne — Marché et créativité entrepreneuriale</h2>
-  <h3>Jesús Huerta de Soto — Traduction : Rosine Létinier</h3>
-</div>
-<div class="card">
-  <h2>Le calcul économique en régime socialiste (1920)</h2>
-  <h3>Ludwig von Mises — Traduction : Robert Goetz-Girey</h3>
-</div>
-<div class="card">
-  <h2>L’éducation gratuite et obligatoire</h2>
-  <h3>Murray Rothbard — Traduction : Nathanael Lavaly, Claude Balança et Marius-Joseph Marchetti</h3>
-</div>
-
-<!-- Essais & politique -->
-<div class="card">
-  <h2>Le socialisme en chemise brune</h2>
-  <h3>Benoît Malbranque — Deuxième édition</h3>
-</div>
-<div class="card">
-  <h2>Les théoriciens français de la liberté humaine</h2>
-  <h3>Benoît Malbranque</h3>
-</div>
-<div class="card">
-  <h2>Le Mannequin</h2>
-  <h3>Germaine de Staël</h3>
-</div>
-<!-- Sciences & philosophie -->
-<div class="card">
-  <h2>Darwin, Espèce et Éthique</h2>
-  <h3>James Rachels — Traduction : Estiva Reus</h3>
-</div>
-
-<!-- Footer téléchargement mis en valeur -->
-<div class="card download-card">
-  <p>Ces ouvrages sont disponibles en téléchargement libre sur Telegram : 
-     <a href="https://t.me/cerclebitcoin" target="_blank">https://t.me/cerclebitcoin</a>
-  </p>
-  <p>Ou sur simple demande par mail à : 
-     <a href="mailto:Satopolys@proton.me">Satopolys@proton.me</a>
-  </p>
-</div>
-
-<!-- Footer navigation -->
-<div class="footer">
-  <a href="index.html">Accueil</a>
-  <a href="#top">Haut de page</a>
-</div>
+  <!-- Footer navigation classique -->
+  <div class="footer">
+    <a href="index.html">Accueil</a>
+    <a href="#top">Haut de page</a>
+  </div>
 
 </div>
 </body>

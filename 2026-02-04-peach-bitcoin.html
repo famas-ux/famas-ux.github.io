@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PEACH BITCOIN — Guide d’utilisation — Bitcoin vu par Famas</title>
+
+<style>
+body{
+	margin:0;
+	background:#000;
+	color:#9fb7a1;
+	font-family:"Courier New", monospace;
+	font-size:16px;
+}
+
+header{
+	padding:26px 14px;
+	text-align:center;
+	border-bottom:1px solid #355;
+}
+
+h1{
+	margin:0;
+	color:#7CFF7C;
+	letter-spacing:1px;
+	font-size:1.7rem;
+}
+
+h2{
+	margin-top:8px;
+	font-weight:normal;
+	color:#b6ffb6;
+	font-size:1rem;
+}
+
+h3{
+	margin-top:14px;
+	font-weight:normal;
+	color:#caffca;
+}
+
+main{
+	padding:14px;
+	display:flex;
+	justify-content:center;
+}
+
+.container{
+	width:100%;
+	max-width:480px;
+}
+
+/* TEXTE */
+.article-title{
+	margin-top:20px;
+	color:#7CFF7C;
+	font-size:1.2rem;
+}
+
+p{
+	line-height:1.6;
+	margin:14px 0;
+}
+
+ul, ol{
+	padding-left:18px;
+}
+
+li{
+	margin:8px 0;
+}
+
+/* BLOCS */
+.block{
+	border:1px solid #355;
+	padding:14px;
+	margin:22px 0;
+	background:#050805;
+}
+
+.block.important{
+	border:2px solid #7CFF7C;
+	background:#050a05;
+	color:#caffca;
+}
+
+pre{
+	background:#050805;
+	border:1px solid #355;
+	padding:12px;
+	overflow-x:auto;
+	color:#baff9c;
+	margin:14px 0;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	font-family:"Courier New", monospace;
+}
+
+/* META */
+.meta{
+	font-size:14px;
+	color:#6f8f7a;
+	margin-top:30px;
+}
+
+/* FOOTER */
+footer{
+	margin-top:40px;
+	padding:14px 0;
+	border-top:1px solid #355;
+	text-align:center;
+	font-size:14px;
+}
+
+a{
+	color:#7CFF7C;
+	text-decoration:none;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+@media (min-width:768px){
+	.container{ max-width:720px; }
+}
+</style>
+</head>
+
+<body>
+
+<a id="top"></a>
+
+<header>
+	<h1>PEACH BITCOIN</h1>
+	<h2>Guide d’utilisation — Bitcoin vu par Famas</h2>
+</header>
+
+<main>
+<div class="container">
+
+<h2 class="article-title">P2P / No-KYC / Self-Custody</h2>
+
+<h3>🔍 Introduction</h3>
+<p>Peach Bitcoin est une plateforme peer-to-peer (P2P) permettant d’acheter et de vendre du Bitcoin sans KYC, directement entre particuliers. Aucune donnée personnelle n’est collectée. Vous conservez le contrôle total de vos fonds à tout moment.</p>
+
+<div class="block important">
+✅ Fonctionnalité centrale : Échanges P2P sécurisés par escrow Bitcoin — idéal pour la confidentialité et la souveraineté.<br>
+<a href="https://peachbitcoin.com/" target="_blank">Site officiel</a><br>
+<a href="https://peachbitcoin.com/quick-start/" target="_blank">Quick Start</a><br>
+<a href="https://peachbitcoin.com/referral/?code=PR5CE3" target="_blank">🔗 Lien Ambassadeur Peach (PR5CE3)</a>
+</div>
+
+<h3>1️⃣ Qu’est-ce que Peach Bitcoin ?</h3>
+<ul>
+	<li>🤝 P2P réel → pas d’intermédiaire</li>
+	<li>❌ Aucun KYC → pas de pièce d’identité</li>
+	<li>🔐 Escrow Bitcoin → fonds bloqués jusqu’au paiement confirmé</li>
+	<li>📊 Orderbook public → prix transparents</li>
+	<li>🇨🇭 Développé en Suisse — open-source</li>
+</ul>
+<p>Peach ne détient jamais vos fonds. Vous restez seul propriétaire de vos bitcoins.<br>
+<a href="https://peachbitcoin.com/fr/kycfree-orderbook/" target="_blank">Orderbook sans KYC (FR)</a></p>
+
+<h3>2️⃣ Création et configuration initiale</h3>
+<ol>
+	<li>Accédez à Peach via le site web ou l’application mobile</li>
+	<li>Choisissez un wallet personnel (ex : BlueWallet, Electrum, Coldcard)</li>
+	<li>Ne créez pas de compte si vous n’en avez pas besoin — mode “guest” disponible</li>
+</ol>
+<div class="block important">
+⚠️ Aucune sauvegarde de seed phrase par Peach :<br>
+→ Votre wallet est externe<br>
+→ Si vous perdez votre wallet → vos bitcoins sont perdus<br>
+Peach ne peut pas vous aider à le récupérer.
+</div>
+
+<h3>3️⃣ Modèle de sécurité</h3>
+<ul>
+	<li>Escrow Bitcoin : le vendeur dépose le BTC dans un contrat intelligent</li>
+	<li>Arbitrage en cas de litige → tiers vérifiés</li>
+	<li>Transaction irréversible → vérifiez toujours les adresses</li>
+	<li>Communication sécurisée → restez dans l’interface</li>
+</ul>
+<p>Recommandations :</p>
+<ul>
+	<li>Utilisez un wallet hardware ou mobile</li>
+	<li>Ne communiquez jamais hors plateforme</li>
+	<li>Vérifiez la réputation du contrepartie (note + nombre de trades)</li>
+	<li>Ne libérez jamais l’escrow sans preuve de paiement confirmé</li>
+</ul>
+<p><a href="https://peachbitcoin.com/quick-start/" target="_blank">Guide de sécurité</a></p>
+
+<h3>4️⃣ Fonctions Bitcoin classiques</h3>
+<ul>
+	<li>📥 Recevoir du BTC depuis l’escrow vers votre wallet</li>
+	<li>📤 Envoyer du BTC en escrow pour vendre</li>
+	<li>💰 Négocier le prix et le moyen de paiement</li>
+	<li>📊 Suivre les trades en cours</li>
+</ul>
+<p>→ Fonctionne comme un échange P2P classique, sans intermédiaire.</p>
+
+<h3>5️⃣ Acheter du Bitcoin sur Peach</h3>
+<p>Étapes :</p>
+<ol>
+	<li>Accédez à l’<a href="https://peachbitcoin.com/fr/kycfree-orderbook/" target="_blank">orderbook sans KYC</a></li>
+	<li>Choisissez une offre (prix, limite, moyen de paiement)</li>
+	<li>Ouvrez un trade → le vendeur dépose le BTC en escrow</li>
+	<li>Payer selon les instructions → envoyez une preuve</li>
+	<li>Le BTC est libéré vers votre wallet</li>
+</ol>
+<pre>
+Exemple d’offre :
+Prix : 70 000 €/BTC
+Limite : 100 € – 5 000 €
+Moyen : Virement SEPA
+Réputation : 4.9/5 (123 trades)
+</pre>
+
+<h3>6️⃣ Vendre du Bitcoin sur Peach</h3>
+<p>Étapes :</p>
+<ol>
+	<li>Créez une offre personnalisée (prix, montant, moyen de paiement)</li>
+	<li>Déposez le BTC en escrow → Peach génère une adresse temporaire</li>
+	<li>Attendez un acheteur → il paie selon votre méthode</li>
+	<li>Confirmez le paiement → libérez l’escrow</li>
+</ol>
+<div class="block important">
+⚠️ Attention :<br>
+→ Envoyez EXACTEMENT le montant de l’offre<br>
+→ Ne libérez l’escrow qu’après confirmation bancaire réelle<br>
+→ Un screenshot n’est pas une preuve suffisante
+</div>
+
+<h3>7️⃣ Données de marché Peach</h3>
+<p>Peach propose une API publique pour analyser les tendances du marché P2P.</p>
+<ul>
+	<li>📈 Suivre les pics de prix</li>
+	<li>📊 Comparer avec les exchanges centralisés</li>
+	<li>📊 Intégrer les données dans un tableau de bord</li>
+</ul>
+<p><a href="https://api.peachbitcoin.com/v1/market/tradePricePeaks" target="_blank">API tradePricePeaks</a></p>
+
+<h3>8️⃣ Bonnes pratiques</h3>
+<ul>
+	<li>✅ Utiliser un wallet personnel (hardware ou mobile)</li>
+	<li>✅ Ne jamais communiquer hors plateforme</li>
+	<li>✅ Vérifier la réputation des utilisateurs</li>
+	<li>✅ Ne jamais libérer un escrow sans paiement confirmé</li>
+	<li>✅ Garder une trace des transactions pour la comptabilité</li>
+</ul>
+
+<h3>9️⃣ Limites à connaître</h3>
+<ul>
+	<li>⚠️ Fonction limitée aux utilisateurs de Peach</li>
+	<li>⚠️ Pas de Lightning Network</li>
+	<li>⚠️ Bitcoin irréversible → pas de remboursement possible</li>
+	<li>⚠️ Dépendance à la réputation des contreparties</li>
+	<li>⚠️ Pas de support client 24/7 — arbitrage communautaire</li>
+</ul>
+
+<h3>1️⃣ Résumé exécutif</h3>
+<p>Peach Bitcoin est une plateforme P2P sans KYC, idéale pour les utilisateurs soucieux de confidentialité et de souveraineté. Vous achetez et vendez du Bitcoin directement entre particuliers, avec un système d’escrow pour sécuriser les transactions. Parfait pour les paiements internationaux, les freelances ou les utilisateurs en pays à forte surveillance financière.</p>
+
+<h3>📚 Ressources officielles</h3>
+<ul>
+	<li><a href="https://peachbitcoin.com/" target="_blank">Site officiel</a></li>
+	<li><a href="https://peachbitcoin.com/quick-start/" target="_blank">Quick Start</a></li>
+	<li><a href="https://peachbitcoin.com/fr/kycfree-orderbook/" target="_blank">Orderbook sans KYC (FR)</a></li>
+	<li><a href="https://api.peachbitcoin.com/v1/market/tradePricePeaks" target="_blank">API Peach</a></li>
+	<li><a href="https://planb.academy/fr/tutorials/exchange/peer-to-peer/peach-c6143241-d900-4047-9b73-1caba5e1f874" target="_blank">PlanB Academy – Tutoriel</a></li>
+</ul>
+
+<pre>
+⚡️👉franck@rizful.com
+</pre>
+
+<div class="meta">
+Publié le 04 février 2026<br>
+Bitcoin vu par Famas
+</div>
+
+</div>
+</main>
+
+<footer>
+	<a href="#top">↑ Haut de page</a> ·
+	<a href="/index.html">Accueil</a>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BULL BITCOIN — Wallet & Échangeur — Bitcoin vu par Famas</title>
+
+<style>
+body{
+    margin:0;
+    background:#000;
+    color:#9fb7a1;
+    font-family:"Courier New", monospace;
+    font-size:16px;
+}
+
+header{
+    padding:26px 14px;
+    text-align:center;
+    border-bottom:1px solid #355;
+}
+
+h1{
+    margin:0;
+    color:#7CFF7C;
+    letter-spacing:1px;
+    font-size:1.7rem;
+}
+
+h2{
+    margin-top:8px;
+    font-weight:normal;
+    color:#b6ffb6;
+    font-size:1rem;
+}
+
+h3{
+    margin-top:14px;
+    font-weight:normal;
+    color:#caffca;
+}
+
+main{
+    padding:14px;
+    display:flex;
+    justify-content:center;
+}
+
+.container{
+    width:100%;
+    max-width:480px;
+}
+
+.article-title{
+    margin-top:20px;
+    color:#7CFF7C;
+    font-size:1.2rem;
+}
+
+p{
+    line-height:1.6;
+    margin:14px 0;
+}
+
+ul, ol{
+    padding-left:18px;
+}
+
+li{
+    margin:8px 0;
+}
+
+.block{
+    border:1px solid #355;
+    padding:14px;
+    margin:22px 0;
+    background:#050805;
+}
+
+.block.important{
+    border:2px solid #7CFF7C;
+    background:#050a05;
+    color:#caffca;
+}
+
+pre{
+    background:#050805;
+    border:1px solid #355;
+    padding:12px;
+    overflow-x:auto;
+    color:#baff9c;
+    margin:14px 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family:"Courier New", monospace;
+}
+
+.meta{
+    font-size:14px;
+    color:#6f8f7a;
+    margin-top:30px;
+}
+
+footer{
+    margin-top:40px;
+    padding:14px 0;
+    border-top:1px solid #355;
+    text-align:center;
+    font-size:14px;
+}
+
+a{
+    color:#7CFF7C;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+@media (min-width:768px){
+    .container{ max-width:720px; }
+}
+</style>
+</head>
+
+<body>
+
+<a id="top"></a>
+
+<header>
+    <h1>BULL BITCOIN</h1>
+    <h2>Wallet & Échangeur — Bitcoin vu par Famas</h2>
+</header>
+
+<main>
+<div class="container">
+
+<h2 class="article-title">Self-custody • Achat / Vente • On-chain • Lightning • Liquid</h2>
+
+<h3>🔍 Introduction</h3>
+<p>
+Bull Bitcoin est à la fois un <strong>portefeuille Bitcoin non-custodial</strong> et un
+<strong>échangeur fiat ↔ bitcoin non dépositaire</strong>.  
+L’ensemble est conçu pour respecter un principe simple :  
+<strong>vous achetez du bitcoin → il est envoyé directement vers votre portefeuille</strong>.
+</p>
+
+<div class="block important">
+✅ Philosophie centrale :<br>
+Acheter, vendre et stocker du bitcoin <strong>sans jamais le confier à un tiers</strong>.<br><br>
+<a href="https://bullbitcoin.com/fr" target="_blank">Site officiel</a><br>
+<a href="https://wallet.bullbitcoin.com/fr" target="_blank">Bull Bitcoin Wallet</a><br>
+<a href="https://app.bullbitcoin.com/registration/famas" target="_blank">Inscription échangeur</a>
+</div>
+
+<h3>1️⃣ Bull Bitcoin Wallet — Portefeuille</h3>
+
+<ul>
+    <li>🔐 Non-custodial — vous détenez vos clés privées</li>
+    <li>₿ Bitcoin-only — aucune altcoin</li>
+    <li>⚡ Lightning Network — paiements instantanés</li>
+    <li>🔁 Liquid Network — rapidité et confidentialité</li>
+    <li>📱 iOS & Android</li>
+</ul>
+
+<p>
+Le wallet est conçu pour être simple, pédagogique et souverain,
+adapté aussi bien aux débutants qu’aux utilisateurs avancés.
+</p>
+
+<h3>2️⃣ Sécurité & sauvegarde des clés</h3>
+
+<p>
+Lors de la création du portefeuille, Bull Bitcoin génère une
+<strong>phrase de récupération (seed phrase)</strong> standard BIP39.
+Cette phrase permet de restaurer vos fonds sur n’importe quel wallet compatible.
+</p>
+
+<div class="block">
+🔐 Option disponible : sauvegarde cloud chiffrée<br><br>
+Bull Bitcoin Wallet propose une <strong>option facultative de sauvegarde chiffrée sur le cloud</strong>
+(iCloud / Google Drive), destinée à simplifier la récupération pour les utilisateurs non techniques.
+</div>
+
+<div class="block important">
+⚠️ Recommandation Famas — Sécurité maximale<br><br>
+Bien qu’une sauvegarde cloud chiffrée existe,  
+<strong>la méthode recommandée reste une sauvegarde manuelle sur papier</strong> :
+<br><br>
+→ Écrire la seed phrase à la main<br>
+→ Conserver la sauvegarde hors ligne<br>
+→ Ne jamais prendre de photo<br>
+→ Ne jamais stocker dans un fichier ou un cloud
+<br><br>
+La souveraineté Bitcoin commence par une sauvegarde
+que <strong>vous êtes seul à contrôler</strong>.
+</div>
+
+<h3>3️⃣ Réseaux Bitcoin supportés</h3>
+
+<ul>
+    <li>₿ On-chain — sécurité maximale, frais ajustables</li>
+    <li>⚡ Lightning Network — paiements instantanés</li>
+    <li>🔁 Liquid Network — rapidité, confidentialité, L-BTC</li>
+</ul>
+
+<p>
+Les comptes sont clairement séparés et visibles dans l’interface,
+ce qui évite toute confusion pour les débutants.
+</p>
+
+<h3>4️⃣ Bull Bitcoin — Échangeur (achat & vente)</h3>
+
+<p>
+Bull Bitcoin est un <strong>échangeur non dépositaire</strong> :
+la plateforme ne conserve jamais vos bitcoins.
+</p>
+
+<ul>
+    <li>🏦 Virement SEPA entrant / sortant</li>
+    <li>📤 Envoi direct vers votre wallet</li>
+    <li>🔒 Taux verrouillé lors des ventes</li>
+    <li>📈 Achats récurrents (DCA)</li>
+    <li>⚡ On-chain / Lightning / Liquid</li>
+</ul>
+
+<div class="block important">
+🔗 Inscription à l’échangeur Bull Bitcoin :<br>
+<a href="https://app.bullbitcoin.com/registration/famas" target="_blank">
+https://app.bullbitcoin.com/registration/famas
+</a>
+</div>
+
+<h3>5️⃣ Acheter du bitcoin — déroulement</h3>
+
+<ol>
+    <li>Virement SEPA depuis votre banque</li>
+    <li>Choix du montant</li>
+    <li>Sélection du réseau (on-chain / Lightning / Liquid)</li>
+    <li>Transaction Bitcoin réelle créée</li>
+    <li>Réception directe dans votre wallet</li>
+</ol>
+
+<h3>6️⃣ Vendre du bitcoin — déroulement</h3>
+
+<ol>
+    <li>Saisie du montant en EUR</li>
+    <li>Génération de la facture Bitcoin</li>
+    <li>Taux verrouillé dès l’envoi</li>
+    <li>Virement bancaire après confirmation</li>
+</ol>
+
+<h3>7️⃣ Pour qui est Bull Bitcoin ?</h3>
+
+<ul>
+    <li>✅ Débutants souhaitant une solution guidée</li>
+    <li>✅ Utilisateurs souverains refusant la garde par des tiers</li>
+    <li>✅ Commerçants acceptant Bitcoin</li>
+    <li>✅ Épargnants en DCA</li>
+</ul>
+
+<h3>8️⃣ Résumé exécutif</h3>
+
+<p>
+Bull Bitcoin est une solution complète pour
+<strong>acheter, vendre et détenir du bitcoin sans intermédiaire</strong>.
+Un wallet non-custodial clair, un échangeur transparent,
+et une philosophie alignée avec les principes fondamentaux de Bitcoin.
+</p>
+
+<h3>📚 Ressources officielles</h3>
+<ul>
+    <li><a href="https://bullbitcoin.com/fr" target="_blank">Site officiel</a></li>
+    <li><a href="https://wallet.bullbitcoin.com/fr" target="_blank">Bull Bitcoin Wallet</a></li>
+    <li><a href="https://app.bullbitcoin.com/registration/famas" target="_blank">Inscription échangeur</a></li>
+    <li><a href="https://planb.academy/fr/tutorials/wallet/mobile/bull-bitcoin-2c72127c-a228-4f50-b833-c6183d56aaf6" target="_blank">Tutoriel Plan B Academy</a></li>
+</ul>
+
+<pre>
+₿ Bitcoin only — Not your keys, not your coins
+</pre>
+
+<div class="meta">
+Publié le 05 février 2026<br>
+Bitcoin vu par Famas
+</div>
+
+</div>
+</main>
+
+<footer>
+    <a href="#top">↑ Haut de page</a> ·
+    <a href="/index.html">Accueil</a>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BLITZ WALLET — Guide d’utilisation — Bitcoin vu par Famas</title>
+
+<style>
+body{
+    margin:0;
+    background:#000;
+    color:#9fb7a1;
+    font-family:"Courier New", monospace;
+    font-size:16px;
+}
+
+header{
+    padding:26px 14px;
+    text-align:center;
+    border-bottom:1px solid #355;
+}
+
+h1{
+    margin:0;
+    color:#7CFF7C;
+    letter-spacing:1px;
+    font-size:1.7rem;
+}
+
+h2{
+    margin-top:8px;
+    font-weight:normal;
+    color:#b6ffb6;
+    font-size:1rem;
+}
+
+h3{
+    margin-top:14px;
+    font-weight:normal;
+    color:#caffca;
+}
+
+main{
+    padding:14px;
+    display:flex;
+    justify-content:center;
+}
+
+.container{
+    width:100%;
+    max-width:480px;
+}
+
+/* TEXTE */
+.article-title{
+    margin-top:20px;
+    color:#7CFF7C;
+    font-size:1.2rem;
+}
+
+p{
+    line-height:1.6;
+    margin:14px 0;
+}
+
+ul, ol{
+    padding-left:18px;
+}
+
+li{
+    margin:8px 0;
+}
+
+/* BLOCS */
+.block{
+    border:1px solid #355;
+    padding:14px;
+    margin:22px 0;
+    background:#050805;
+}
+
+.block.important{
+    border:2px solid #7CFF7C;
+    background:#050a05;
+    color:#caffca;
+}
+
+pre{
+    background:#050805;
+    border:1px solid #355;
+    padding:12px;
+    overflow-x:auto;
+    color:#baff9c;
+    margin:14px 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family:"Courier New", monospace;
+}
+
+/* META */
+.meta{
+    font-size:14px;
+    color:#6f8f7a;
+    margin-top:30px;
+}
+
+/* FOOTER */
+footer{
+    margin-top:40px;
+    padding:14px 0;
+    border-top:1px solid #355;
+    text-align:center;
+    font-size:14px;
+}
+
+a{
+    color:#7CFF7C;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+@media (min-width:768px){
+    .container{ max-width:720px; }
+}
+</style>
+</head>
+
+<body>
+
+<a id="top"></a>
+
+<header>
+    <h1>BLITZ WALLET</h1>
+    <h2>Guide d’utilisation — Bitcoin vu par Famas</h2>
+</header>
+
+<main>
+<div class="container">
+
+<h2 class="article-title">Self-Custody • Lightning • USD • eCash PoS</h2>
+
+<h3>🔍 Introduction</h3>
+<p>Blitz Wallet est un portefeuille Bitcoin en self-custody conçu pour l’usage quotidien. Vous détenez vos clés, contrôlez vos fonds, sans intermédiaire. L’application simplifie Bitcoin : paiements Lightning, envois en USD via stablecoins, cadeaux, contacts internes, et mode terminal de paiement pour commerçants — tout en conservant la souveraineté.</p>
+
+<div class="block important">
+✅ Fonctionnalité centrale : Bitcoin simple comme une app de paiement — sans sacrifier la sécurité.<br>
+<a href="https://blitz-wallet.com/" target="_blank">Site officiel</a><br>
+<a href="https://apps.apple.com/us/app/blitz-wallet/id6476810582" target="_blank">iOS App Store</a><br>
+<a href="https://blitz-wallet.com/pages/privacypolicy/" target="_blank">Politique de confidentialité</a>
+</div>
+
+<h3>1️⃣ Qu’est-ce que Blitz Wallet ?</h3>
+<ul>
+    <li>🔐 Self-custody total — vous êtes seul propriétaire de vos fonds</li>
+    <li>⚡ Lightning Network — paiements instantanés, frais minimes</li>
+    <li>💵 USD/stablecoins — payez/recevez en dollars via Lightning (ex: USDB)</li>
+    <li>👥 Contacts internes — envoi sans QR, sans adresse longue</li>
+    <li>🎁 Blitz Gifts — offrir des sats ou USD via lien ou QR (remboursable)</li>
+    <li>🧾 eCash PoS — transformez votre smartphone en terminal de paiement</li>
+    <li>📧 LNURL — adresses lisibles : nom@blitzwalletapp.com</li>
+</ul>
+<p>Blitz vise à masquer la complexité technique pour que vous puissiez simplement payer, recevoir, offrir — comme avec une app bancaire, mais en Bitcoin.</p>
+
+<h3>2️⃣ Création et configuration initiale</h3>
+<ol>
+    <li>Téléchargez l’application sur iOS ou Android</li>
+    <li>Créez votre wallet — sauvegardez votre phrase de récupération (seed phrase)</li>
+    <li>Configurez vos contacts (optionnel) — ajoutez des noms pour envoyer sans QR</li>
+    <li>Activez les fonctions selon vos besoins : Gifts, eCash PoS, USD</li>
+</ol>
+<div class="block important">
+⚠️ Aucune sauvegarde de seed phrase par Blitz :<br>
+→ Si vous perdez votre seed → vos fonds sont perdus<br>
+→ Blitz ne peut pas vous aider à les récupérer<br>
+→ Stockez-la hors ligne, en sécurité.
+</div>
+
+<h3>3️⃣ Fonctionnalités clés</h3>
+
+<h4>🔹 Paiements Lightning (rapides, peu coûteux)</h4>
+<ul>
+    <li>Envoyez/recevez en quelques secondes</li>
+    <li>Utilisez des contacts internes — pas besoin de QR code</li>
+    <li>Adresses LNURL lisibles — ex: famas@blitzwalletapp.com</li>
+</ul>
+
+<h4>🔹 Envoi en USD via stablecoins</h4>
+<ul>
+    <li>Choisissez “USD” au lieu de “sats” — Blitz convertit en arrière-plan</li>
+    <li>Le destinataire reçoit en sats, mais voit le montant en USD</li>
+    <li>Idéal pour éviter la volatilité — surtout pour les nouveaux utilisateurs</li>
+</ul>
+
+<h4>🔹 Blitz Gifts — offrir du Bitcoin simplement</h4>
+<ul>
+    <li>Créez un cadeau en sats ou USD — lien ou QR</li>
+    <li>Ajoutez un message personnalisé</li>
+    <li>Si non réclamé → fonds remboursés à l’expéditeur</li>
+    <li>Parfait pour initier des amis ou faire des dons</li>
+</ul>
+
+<h4>🔹 eCash PoS — terminal de paiement pour commerçants</h4>
+<ul>
+    <li>Entrez le montant → QR généré → client paie via Lightning/on-chain/USD</li>
+    <li>Aucun matériel, aucun compte, aucun KYC</li>
+    <li>Idéal pour cafés, food trucks, marchés, événements</li>
+    <li>Les fonds sont en self-custody — pas d’intermédiaire</li>
+</ul>
+
+<h3>4️⃣ Utilisation quotidienne</h3>
+<p>Blitz se veut transparent — vous n’avez pas besoin de comprendre les canaux Lightning, les adresses, les réseaux. Vous choisissez :</p>
+<ul>
+    <li>“Envoyer à Famas” → il reçoit instantanément</li>
+    <li>“Offrir 10 USD” → il reçoit un lien ou QR</li>
+    <li>“Encaisser 25 €” → QR généré, paiement confirmé en 3s</li>
+</ul>
+<p>Le système gère la complexité technique en arrière-plan — vous vous concentrez sur l’acte de paiement.</p>
+
+<h3>5️⃣ Pour les commerçants</h3>
+<p>Blitz est conçu pour remplacer les terminaux CB — sans frais, sans intermédiaire.</p>
+<ul>
+    <li>✅ Encaissement instantané — Lightning, on-chain, USD</li>
+    <li>✅ Aucun matériel — juste un smartphone</li>
+    <li>✅ Prix en USD possible — client paie en Bitcoin, vous recevez en stablecoin</li>
+    <li>✅ Pas de KYC, pas de contrat, pas de frais cachés</li>
+    <li>✅ Adapté aux petits commerces, stands temporaires, associations</li>
+</ul>
+<div class="block important">
+⚠️ Attention :<br>
+→ Le paiement est irréversible — vérifiez toujours le montant<br>
+→ Ne déconnectez pas l’app pendant un paiement<br>
+→ Sauvegardez votre seed — votre business dépend de votre wallet
+</div>
+
+<h3>6️⃣ Réseaux et technologies</h3>
+<p>Blitz combine plusieurs couches pour offrir flexibilité et simplicité :</p>
+<ul>
+    <li>₿ Bitcoin on-chain — sécurité maximale</li>
+    <li>⚡ Lightning Network — rapidité, faibles frais</li>
+    <li>🔁 Liquid Network — liquidité, swaps</li>
+    <li>✨ Spark Layer — transactions instantanées sans gestion de canaux</li>
+</ul>
+<p>Vous n’avez pas besoin de les comprendre — Blitz les utilise intelligemment selon le contexte.</p>
+
+<h3>7️⃣ Bonnes pratiques</h3>
+<ul>
+    <li>✅ Sauvegardez votre seed phrase — hors ligne, en sécurité</li>
+    <li>✅ Utilisez un smartphone dédié si vous êtes commerçant</li>
+    <li>✅ Vérifiez les montants avant de confirmer un paiement</li>
+    <li>✅ Ne partagez jamais votre seed ou votre PIN</li>
+    <li>✅ Activez le mode eCash PoS uniquement en mode “vendeur”</li>
+</ul>
+
+<h3>8️⃣ Limites à connaître</h3>
+<ul>
+    <li>⚠️ Pas de support client 24/7 — communautaire et documentation</li>
+    <li>⚠️ Dépendance à la connectivité — nécessite internet pour Lightning</li>
+    <li>⚠️ Pas de gestion multi-wallet — un seul wallet par appareil</li>
+    <li>⚠️ Pas de fonction “sauvegarde cloud” — tout est local</li>
+    <li>⚠️ Pas d’intégration bancaire — pas de conversion automatique en fiat</li>
+</ul>
+
+<h3>9️⃣ Résumé exécutif</h3>
+<p>Blitz Wallet est le portefeuille Bitcoin pour ceux qui veulent utiliser Bitcoin comme une monnaie — sans compromis sur la souveraineté. Simple, rapide, sécurisé, avec des fonctions adaptées aux utilisateurs et aux commerçants. Idéal pour les paiements quotidiens, les cadeaux, ou pour remplacer un terminal CB — tout en restant en self-custody.</p>
+
+<h3>📚 Ressources officielles</h3>
+<ul>
+    <li><a href="https://blitz-wallet.com/" target="_blank">Site officiel</a></li>
+    <li><a href="https://apps.apple.com/us/app/blitz-wallet/id6476810582" target="_blank">iOS App Store</a></li>
+    <li><a href="https://blitz-wallet.com/pages/about/" target="_blank">À propos</a></li>
+    <li><a href="https://blitz-wallet.com/pages/blog/introducing-blitz-wallet/" target="_blank">Introduction du projet</a></li>
+    <li><a href="https://blitz-wallet.com/pages/blog/blitz-gifts/" target="_blank">Blitz Gifts</a></li>
+    <li><a href="https://blitz-wallet.com/pages/blog/ecash-pos/" target="_blank">eCash PoS</a></li>
+    <li><a href="https://blitz-wallet.com/pages/privacypolicy/" target="_blank">Politique de confidentialité</a></li>
+</ul>
+
+<pre>
+⚡️👉famas@anon.fr
+</pre>
+
+<div class="meta">
+Publié le 05 février 2026<br>
+Bitcoin vu par Famas
+</div>
+
+</div>
+</main>
+
+<footer>
+    <a href="#top">↑ Haut de page</a> ·
+    <a href="/index.html">Accueil</a>
+</footer>
+
+</body>
+</html>
